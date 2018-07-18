@@ -6,12 +6,17 @@ import { LandingPageRoutingModule } from './routing.module';
 import { SharedComponentsModule } from '../shared-components/shared-components.module';
 
 import { LandingZoneComponent } from './landing-zone.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { HomeComponent } from './components/home/home.component';
+import { HowWeWorkComponent } from './components/how-we-work/how-we-work.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { ContactComponent } from './components/contact/contact.component';
 // import { LandingZoneModuleSettings } from './services/settings/LandingZoneModuleSettings.service';
 
 /*
 import {
-  HeaderComponent, FooterComponent, HowWeWorkComponent, GalleryComponent, ContactComponent,
-  HomeComponent, BannerContactComponent, SplashWallpaperComponent, AboutUsComponent
+  HeaderComponent, FooterComponent
+  BannerContactComponent, SplashWallpaperComponent,
 } from './components';
 */
 
@@ -24,17 +29,22 @@ import {
     // NgxGalleryModule
   ], // Imports
   declarations: [
-    // AboutUsComponent,
+    AboutUsComponent,
+    HomeComponent,
+    HowWeWorkComponent,
+    GalleryComponent,
+    ContactComponent,
     // HeaderComponent,
     // FooterComponent,
-    // HowWeWorkComponent,
-    // GalleryComponent,
-    // ContactComponent,
-    // HomeComponent,
     // BannerContactComponent,
     // SplashWallpaperComponent
   ], // Declarations
   exports: [
+    AboutUsComponent,
+    HomeComponent,
+    HowWeWorkComponent,
+    GalleryComponent,
+    ContactComponent
   ], // Exports
   providers: [
     // LandingZoneModuleSettings
