@@ -7,12 +7,13 @@ import { SharedComponentsModule } from '../shared-components/shared-components.m
 
 import { LandingZoneComponent } from './landing-zone.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { HomeComponent } from './components/home/home.component';
 // import { LandingZoneModuleSettings } from './services/settings/LandingZoneModuleSettings.service';
 
 /*
 import {
   HeaderComponent, FooterComponent, HowWeWorkComponent, GalleryComponent, ContactComponent,
-  HomeComponent, BannerContactComponent, SplashWallpaperComponent, AboutUsComponent
+  BannerContactComponent, SplashWallpaperComponent,
 } from './components';
 */
 
@@ -26,12 +27,12 @@ import {
   ], // Imports
   declarations: [
     AboutUsComponent,
+    HomeComponent,
     // HeaderComponent,
     // FooterComponent,
     // HowWeWorkComponent,
     // GalleryComponent,
     // ContactComponent,
-    // HomeComponent,
     // BannerContactComponent,
     // SplashWallpaperComponent
   ], // Declarations
