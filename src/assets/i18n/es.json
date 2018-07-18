@@ -1,0 +1,54 @@
+{
+  "COMMON_APPLICATION":{
+    "NAME_COMPANY":"Bioclimatic Big House",
+    "FULL_NAME_COMPANY":"Bioclimatic Big House S.L.",
+    "ADDRESS_COMPANY":"Quintanar de la Orden",
+    "TOWN_COMPANY":"Toledo (España)",
+    "PHONES_COMPANY":"654 746 654",
+    "TITLE":"Aplicación Web Oficial de la compañia Bioclimatic Big House",
+    "SLOGAN_HOME":"Construimos tus sueños, asegurando el futuro",
+    "SLOGAN_ABOUT_US":"Utilización de energías renovables mediante sistemas sostenibles",
+    "SLOGAN_HOW_WE_WORK":"Ahorro energético y sostenibilidad",
+    "SLOGAN_GALLERY":"Mínimo consumo energético, mínimo impacto ambiental",
+    "SLOGAN_CONTACT":"Las tecnologías constructivas más avanzadas"
+  },
+  "NAVIGATION_LANDING_ZONE":{
+    "PRIVATE_ACCESS_BTN":"Zona Privada",
+    "HOME":"Inicio",
+    "ABOUT_US":"Sobre Nosotros",
+    "HOW_WE_WORK":"Como Trabajamos",
+    "IMAGES_GALLERY":"Galeria de Imagenes",
+    "CONTACT":"Contacto"
+  },
+  "BANNER_LANDING_ZONE":{
+    "BANNER_TEXT":"Si necesitas preguntar o realizar cualquier tipo de cuestión",
+    "BANNER_TEXT_LINK":"nosotros estamos dispuestos a ayudarte!"
+  },
+  "FOOTER_LANDING_ZONE":{
+    "WHERE_WE_ARE":"Dónde encontrarnos",
+    "LEGAL_CONDITIONS":"Condiciones Legales",
+    "TERMS":"Términos Legales",
+    "PRIVACY":"Política de Privacidad",
+    "COOKIES":"Política de Cookies",
+    "COPYRIGHT_LABEL":"todos los derechos reservados"
+  },
+  "HOME":{
+
+  },
+  "ABOUT_US":{
+    "TITLE":"¿Quienes somos?",
+    "SUBTITLE":"Conoce quienes somos y nuestras ideales de construcción",
+    "PARAGRAPH_1":"Sencillamente, Bioclimatic Big House lo formamos un grupo de personas, personas apasionadas por la innovación aplicada a la experiencia del cliente, buscamos y utilizamos los métodos más modernos de análisis, diseño y por último de construcción de cada uno de los proyectos que emprendemos y denominamos como nuestro, todos y cada uno de ellos son ideados para conseguir la certificación energética más eficiente, para ello siempre respetamos una serie de pilares en los que se cimienta nuestro método:",
+    "CONSTRUCTION_FEATURES":{
+      "ITEM_1":"Busqueda y utilización de los mejores métodos de aislamiento",
+      "ITEM_2":"Máxima eficiencia energetica mediante energias limpias y sostenibles",
+      "ITEM_3":"Total aprovechamiento térmico gracias a la instalación de suelos radiantes",
+      "ITEM_4":"Utilización de materiales ligeros"
+    },
+        "PARAGRAPH_2":"Estos son las bases esenciales en las que nos apoyamos para poder realizar proyectos con certificación térmica clase A aprobados y visados por el colegio nacional de arquitectos, realizamos <b>viviendas un 150% más eficientes que una vivienda realizada con métodos tradicionales</b>.Nuestra dilatada experiencia en este tipo de construcciones, son mas de un centenar de viviendas construidas en diferentes paises, la fiabilidad y calidad de nuestros proyectos finalizados nos avala.",
+    "PARAGRAPH_3":"El método Bioclimatic Big House es apto para todo tipo de bolsillos, nuestros proyectos están estudiados para que el coste total sea similar o incluso inferior a una construcción tradicional, el análisis inicial y diseño de cada uno de nuestros proyectos están enfocados a conseguir que nuestro método se adapte al presupuesto de nuestro cliente.",
+    "PARAGRAPH_4":"Una casa bioclimática no tiene por qué ser más cara que una convencional. No necesita de la compra o instalación de sistemas mecánicos de climatización, sino que juega con los elementos arquitectónicos de siempre para incrementar el rendimiento energético y conseguir el confort de forma natural. Para ello, el diseño bioclimático supone un conjunto de restricciones, pero siguen existiendo grados de libertad para el diseño según el gusto de cada cual. La arquitectura bioclimática tiene en cuenta las condiciones del terreno, el recorrido del Sol, las corrientes de aire, etc., aplicando estos aspectos a la distribución de los espacios, la apertura y orientación de las ventanas, etc., con el fin de conseguir una eficiencia energética. No consiste en inventar cosas extrañas sino diseñar con las ya existentes y saber sacar el máximo provecho a los recursos naturales que nos brinda el entorno. Sin embargo, esto no tiene porqué condicionar el aspecto de la construcción, que es completamente variable y perfectamente acorde con las tendencias y el diseño de una buena arquitectura.",
+    "PARAGRAPH_5":"La arquitectura bioclimática es un tipo de arquitectura donde el equilibrio y la armonía son una constante con el medio ambiente. Se busca lograr un gran nivel de confort térmico, teniendo en cuenta el clima y las condiciones del entorno para ayudar a conseguir el confort térmico interior mediante la adecuación del diseño, la geometría, la orientación y la construcción del edificio adaptado a las condiciones climáticas de su entorno. Juega exclusivamente con las características locales del medio (relieve, clima, vegetación natural, dirección de los vientos dominantes, insolación, etc.), así como,el diseño y los elementos arquitectónicos, sin utilizar sistemas mecánicos, que más bien se consideran como sistemas de apoyo. No debemos olvidar, que una gran parte de la arquitectura tradicional ya funcionaba según los principios bioclimáticos: ventanales orientados al sur en las regiones de clima frío del hemisferio norte, el uso de ciertos materiales con determinadas propiedades térmicas, como la madera, la piedra o el adobe, el abrigo del suelo, el encalado en las casas mediterráneas para mantener el interior fresco en verano, la ubicación de los pueblos, etc. La arquitectura bioclimática es, en definitiva, una arquitectura adaptada al medio ambiente, sensible al impacto que provoca en la naturaleza, y que intenta minimizar el consumo energético y con él, la contaminación ambiental.",    
+    "PARAGRAPH_FINAL_SLOGAN":"Bioclimatic Big House, creado por y para personas, innovamos para mejorar y abaratar tu futuro dando mayor y mejor conford en el lugar mas importante...tu casa"
+  }
+}
