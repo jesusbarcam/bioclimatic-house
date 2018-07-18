@@ -9,6 +9,7 @@ import { LandingZoneComponent } from './landing-zone.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
 import { HowWeWorkComponent } from './components/how-we-work/how-we-work.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 // import { LandingZoneModuleSettings } from './services/settings/LandingZoneModuleSettings.service';
 
 /*
@@ -30,9 +31,9 @@ import {
     AboutUsComponent,
     HomeComponent,
     HowWeWorkComponent,
+    GalleryComponent
     // HeaderComponent,
     // FooterComponent,
-    // GalleryComponent,
     // ContactComponent,
     // BannerContactComponent,
     // SplashWallpaperComponent
@@ -41,6 +42,7 @@ import {
     AboutUsComponent,
     HomeComponent,
     HowWeWorkComponent,
+    GalleryComponent
   ], // Exports
   providers: [
     // LandingZoneModuleSettings
