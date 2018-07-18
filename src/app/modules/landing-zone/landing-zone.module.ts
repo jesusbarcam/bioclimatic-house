@@ -8,6 +8,7 @@ import { SharedComponentsModule } from '../shared-components/shared-components.m
 import { LandingZoneComponent } from './landing-zone.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
+import { HowWeWorkComponent } from './components/how-we-work/how-we-work.component';
 // import { LandingZoneModuleSettings } from './services/settings/LandingZoneModuleSettings.service';
 
 /*
@@ -28,16 +29,18 @@ import {
   declarations: [
     AboutUsComponent,
     HomeComponent,
+    HowWeWorkComponent,
     // HeaderComponent,
     // FooterComponent,
-    // HowWeWorkComponent,
     // GalleryComponent,
     // ContactComponent,
     // BannerContactComponent,
     // SplashWallpaperComponent
   ], // Declarations
   exports: [
-    AboutUsComponent
+    AboutUsComponent,
+    HomeComponent,
+    HowWeWorkComponent,
   ], // Exports
   providers: [
     // LandingZoneModuleSettings
