@@ -6,6 +6,7 @@ import { LandingPageRoutingModule } from './routing.module';
 import { SharedComponentsModule } from '../shared-components/shared-components.module';
 
 import { LandingZoneComponent } from './landing-zone.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 // import { LandingZoneModuleSettings } from './services/settings/LandingZoneModuleSettings.service';
 
 /*
@@ -24,7 +25,7 @@ import {
     // NgxGalleryModule
   ], // Imports
   declarations: [
-    // AboutUsComponent,
+    AboutUsComponent,
     // HeaderComponent,
     // FooterComponent,
     // HowWeWorkComponent,
@@ -35,6 +36,7 @@ import {
     // SplashWallpaperComponent
   ], // Declarations
   exports: [
+    AboutUsComponent
   ], // Exports
   providers: [
     // LandingZoneModuleSettings
