@@ -10,11 +10,12 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
 import { HowWeWorkComponent } from './components/how-we-work/how-we-work.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { ContactComponent } from './components/contact/contact.component';
 // import { LandingZoneModuleSettings } from './services/settings/LandingZoneModuleSettings.service';
 
 /*
 import {
-  HeaderComponent, FooterComponent, HowWeWorkComponent, GalleryComponent, ContactComponent,
+  HeaderComponent, FooterComponent
   BannerContactComponent, SplashWallpaperComponent,
 } from './components';
 */
@@ -31,10 +32,10 @@ import {
     AboutUsComponent,
     HomeComponent,
     HowWeWorkComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactComponent,
     // HeaderComponent,
     // FooterComponent,
-    // ContactComponent,
     // BannerContactComponent,
     // SplashWallpaperComponent
   ], // Declarations
@@ -42,7 +43,8 @@ import {
     AboutUsComponent,
     HomeComponent,
     HowWeWorkComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactComponent
   ], // Exports
   providers: [
     // LandingZoneModuleSettings

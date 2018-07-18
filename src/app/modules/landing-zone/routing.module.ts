@@ -6,9 +6,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
 import { HowWeWorkComponent } from './components/how-we-work/how-we-work.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
-/*
 import { ContactComponent } from './components/contact/contact.component';
-*/
+
 
 
 export const landingZoneRoutes: Routes = [
@@ -18,8 +17,8 @@ export const landingZoneRoutes: Routes = [
       {path: 'home', component: HomeComponent },
       { path: 'aboutus', component: AboutUsComponent },
       {path: 'howwework', component: HowWeWorkComponent },
-      {path: 'gallery', component: GalleryComponent }
-      // {path: 'contact', component: ContactComponent }
+      {path: 'gallery', component: GalleryComponent },
+      {path: 'contact', component: ContactComponent }
   ]},
 ]; // LandingPageRoutes
 
