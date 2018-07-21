@@ -11,7 +11,6 @@ import { HomeComponent } from './components/home/home.component';
 import { HowWeWorkComponent } from './components/how-we-work/how-we-work.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
-// import { LandingZoneModuleSettings } from './services/settings/LandingZoneModuleSettings.service';
 
 /*
 import {
@@ -47,7 +46,6 @@ import {
     ContactComponent
   ], // Exports
   providers: [
-    // LandingZoneModuleSettings
   ]
 })
 export class LandingZoneModule {
