@@ -14,8 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 
 /*
 import {
-  HeaderComponent, FooterComponent
-  BannerContactComponent, SplashWallpaperComponent,
+  HeaderComponent, FooterComponent, SplashWallpaperComponent,
 } from './components';
 */
 
@@ -23,27 +22,23 @@ import {
 @NgModule({
   imports: [
     CommonModule,
-    LandingPageRoutingModule,
-    SharedComponentsModule
+    SharedComponentsModule,
+    LandingPageRoutingModule
     // NgxGalleryModule
   ], // Imports
   declarations: [
-    AboutUsComponent,
-    HomeComponent,
-    HowWeWorkComponent,
-    GalleryComponent,
-    ContactComponent,
-    // HeaderComponent,
-    // FooterComponent,
-    // BannerContactComponent,
-    // SplashWallpaperComponent
-  ], // Declarations
-  exports: [
+    LandingZoneComponent,
     AboutUsComponent,
     HomeComponent,
     HowWeWorkComponent,
     GalleryComponent,
     ContactComponent
+    // HeaderComponent,
+    // FooterComponent,
+    // SplashWallpaperComponent
+  ], // Declarations
+  exports: [
+    LandingZoneComponent
   ], // Exports
   providers: [
   ]

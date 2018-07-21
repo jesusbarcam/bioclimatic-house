@@ -25,8 +25,7 @@ export const landingZoneRoutes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild( landingZoneRoutes )],
-  exports: [RouterModule],
-  declarations: [LandingZoneComponent]
+  exports: [RouterModule]
 })
 
 export class LandingPageRoutingModule {
