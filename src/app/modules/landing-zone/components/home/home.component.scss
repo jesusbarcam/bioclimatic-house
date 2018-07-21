@@ -5,7 +5,6 @@
 $margin-content-section: 2rem !default;
 
 
-
 .wrapper {
   width: 100%;
   margin-bottom: $margin-content-section;
@@ -16,7 +15,6 @@ $margin-content-section: 2rem !default;
     background-color: rgba($color-dark,0.25);
 
     .boxes-container {
-      height: 30vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -24,6 +22,7 @@ $margin-content-section: 2rem !default;
     
 
       .box-wrapper {
+        height: 280px;
         display: flex;
         flex-direction: column;
         justify-content: center;
