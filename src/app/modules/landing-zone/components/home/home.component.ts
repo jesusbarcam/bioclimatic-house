@@ -1,5 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+
 import { LandingZoneModuleSettings } from '../../services/settings/landing-zone-module-settings.service';
+
 
 @Component({
   selector: 'app-home',
