@@ -34,8 +34,7 @@ import {
     GalleryComponent,
     ContactComponent
     // HeaderComponent,
-    // FooterComponent,
-    // SplashWallpaperComponent
+    // FooterComponent
   ], // Declarations
   exports: [
     LandingZoneComponent

@@ -4,6 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { ScrollfxDirective, ElementScrollfxDirective } from './directives/scrollfx.directive';
 import { BannerContactComponent } from './components/banner-contact/banner-contact.component';
+import { SplashWallpaperComponent } from './components/splash-wallpaper/splash-wallpaper.component';
 
 @NgModule({
 
@@ -14,12 +15,15 @@ import { BannerContactComponent } from './components/banner-contact/banner-conta
   declarations: [
     BannerContactComponent,
     ScrollfxDirective,
-    ElementScrollfxDirective
+    ElementScrollfxDirective,
+    SplashWallpaperComponent
   ],
   exports: [
     BannerContactComponent,
     ScrollfxDirective,
-    ElementScrollfxDirective
+    ElementScrollfxDirective,
+    SplashWallpaperComponent,
+    TranslateModule
   ]
 })
 export class SharedComponentsModule {
