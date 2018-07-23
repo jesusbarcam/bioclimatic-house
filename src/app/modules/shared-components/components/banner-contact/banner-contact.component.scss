@@ -1,0 +1,28 @@
+@import 'variables';
+
+
+.banner-wrapper {
+  padding: 1.7rem 0;
+  background-color: $color-1;
+
+  h3 {
+    text-align: center;
+    color: $color-light;
+    font-size: $fontSize-paragraph + .3rem ;
+    line-height: 1.5rem;
+    font-weight: 100;
+
+    a {
+      padding: .3rem .4rem;
+      border-radius: 3px;
+      background-color: lighten($color-1,5);
+    }// a
+
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }// a
+
+  }// H3
+
+}// Banner-wrapper
