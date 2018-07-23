@@ -25,7 +25,7 @@ export class SplashWallpaperComponent implements OnInit {
   public insert: boolean;
 
   @Input('imageUrl')
-  private imageUrl: string;
+  public imageUrl: string;
 
   @Input('summary')
   public summary: string;
