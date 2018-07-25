@@ -11,10 +11,11 @@ import { HomeComponent } from './components/home/home.component';
 import { HowWeWorkComponent } from './components/how-we-work/how-we-work.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { HeaderComponent } from './components/header/header.component';
 
 /*
 import {
-  HeaderComponent, FooterComponent, SplashWallpaperComponent,
+  FooterComponent, SplashWallpaperComponent,
 } from './components';
 */
 
@@ -32,8 +33,8 @@ import {
     HomeComponent,
     HowWeWorkComponent,
     GalleryComponent,
-    ContactComponent
-    // HeaderComponent,
+    ContactComponent,
+    HeaderComponent
     // FooterComponent
   ], // Declarations
   exports: [

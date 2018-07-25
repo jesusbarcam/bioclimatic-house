@@ -10,11 +10,12 @@
   <div class="summary-container" [style.top]="logotypePosition" [class.completed]=" completed " >
     <div #summaryElement class="summary-wrapper" [style.opacity]="summaryOpacity" >
       
-      <h3 class="summary-detail">{{ detail }}</h3>
-      <h1 class="summary">{{ summary }}</h1>
-
-      <div #detectedScroll class="horizont-bar"></div>
-      
+      <div class="flex-center">
+        <h3 class="summary-detail">{{ detail }}</h3>
+        <h1 class="summary">{{ summary }}</h1>
+        <div #detectedScroll class="horizont-bar"></div>
+      </div>
+        
     </div>
   </div>
 

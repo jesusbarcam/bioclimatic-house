@@ -112,13 +112,23 @@ $numClasses: 15;
 
 
   .summary-wrapper {
+    width: 100%;
     position: absolute;
-    left:10%;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .flex-center {
+      width: 80%;
+    }//flex-center
 
     h1.summary {
       color: $color-light-extra;
       font-size: 4.5rem !important;
-      letter-spacing: .125rem !important;
+      //letter-spacing: .125rem !important;
       text-transform: uppercase !important;
       font-weight: 700;
     }// Summary
