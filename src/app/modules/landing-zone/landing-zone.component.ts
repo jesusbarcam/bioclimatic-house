@@ -68,10 +68,12 @@ export class LandingZoneComponent implements OnInit {
    * @description
    */
   private whenRouteChange(currentURL: any) {
-    const endPointRoute: string[] = currentURL.split('/');
-    const currentRoute: string = endPointRoute[ (endPointRoute.length - 1) ];
-    this.splashImageUrl = this.getWallpaperImageDependingOfRoute( currentRoute );
-    this.slogan = this.getSloganDependingOfRoute( currentRoute );
+    if ( currentURL ) {
+      const endPointRoute: string[] = currentURL.split('/');
+      const currentRoute: string = endPointRoute[ (endPointRoute.length - 1) ];
+      this.splashImageUrl = this.getWallpaperImageDependingOfRoute( currentRoute );
+      this.slogan = this.getSloganDependingOfRoute( currentRoute );
+    }// If
   }// GetSplashDependingOfRoute
 
 
