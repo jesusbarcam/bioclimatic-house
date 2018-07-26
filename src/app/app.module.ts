@@ -9,7 +9,6 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { UnknowPageComponent } from './components/unknow-page/unknow-page.component';
-import { HeaderComponent } from './components/header/header.component';
 import { PrivateZoneModule } from './modules/private-zone/private-zone.module';
 import { LandingZoneModule } from './modules/landing-zone/landing-zone.module';
 import { RoutingModule } from './routing.module';
@@ -39,8 +38,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   declarations: [
     AppComponent,
-    UnknowPageComponent,
-    HeaderComponent
+    UnknowPageComponent
   ],
   providers: [],
   bootstrap: [ AppComponent ]
