@@ -18,7 +18,8 @@ export const landingZoneRoutes: Routes = [
       { path: 'aboutus', component: AboutUsComponent },
       {path: 'howwework', component: HowWeWorkComponent },
       {path: 'gallery', component: GalleryComponent },
-      {path: 'contact', component: ContactComponent }
+      {path: 'contact', component: ContactComponent },
+      {path: 'access', pathMatch: 'full', redirectTo: '/private/access'} // Redirect to private module routes
   ]},
 ]; // LandingPageRoutes
 
