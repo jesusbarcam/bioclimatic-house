@@ -1,3 +1,67 @@
-<p>
-  about-us works!
-</p>
+<div class="aboutus-wrapper">
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-12">
+        <h1 class="section-title" [innerHTML]=" 'ABOUT_US.TITLE' | translate "></h1>
+        <h3 class="section-subtitle" [innerHTML]=" 'ABOUT_US.SUBTITLE' | translate "></h3>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class=" col-12 ">
+        <div class="content-info">
+          
+          <p [innerHTML]="'ABOUT_US.PARAGRAPH_1' | translate "></p>
+          
+          <div class="construction-features">
+            
+            <span>
+              <span class="list-number">1.</span>
+              <span [innerHTML]=" 'ABOUT_US.CONSTRUCTION_FEATURES.ITEM_1' | translate "></span>
+            </span>
+            
+            <span>
+              <span class="list-number">2.</span>
+              <span [innerHTML]=" 'ABOUT_US.CONSTRUCTION_FEATURES.ITEM_2' | translate "></span>
+            </span>
+
+            <span>
+              <span class="list-number">3.</span>
+              <span [innerHTML]=" 'ABOUT_US.CONSTRUCTION_FEATURES.ITEM_3' | translate "></span>
+            </span>
+
+            <span>
+              <span class="list-number">4.</span>
+              <span [innerHTML]=" 'ABOUT_US.CONSTRUCTION_FEATURES.ITEM_4' | translate"></span>
+            </span>
+            
+          </div>
+          
+          <p [innerHTML]=" 'ABOUT_US.PARAGRAPH_2' | translate "></p>
+          <p [innerHTML]=" 'ABOUT_US.PARAGRAPH_5' | translate "></p>
+          <p [innerHTML]=" 'ABOUT_US.PARAGRAPH_4' | translate "></p>
+          <p [innerHTML]=" 'ABOUT_US.PARAGRAPH_3' | translate "></p>
+          
+          <h3 class="slogan" [innerHTML]=" 'ABOUT_US.PARAGRAPH_FINAL_SLOGAN' | translate "></h3>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+
+          <div class="company-references">
+            <p [innerHTML]=" 'COMMON_APPLICATION.FULL_NAME_COMPANY' | translate "></p>
+            <span [innerHTML]=" 'COMMON_APPLICATION.ADDRESS_COMPANY' | translate "></span>
+            <span [innerHTML]=" 'COMMON_APPLICATION.TOWN_COMPANY' | translate "></span>
+            <span [innerHTML]=" 'COMMON_APPLICATION.PHONES_COMPANY' | translate  "></span>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
