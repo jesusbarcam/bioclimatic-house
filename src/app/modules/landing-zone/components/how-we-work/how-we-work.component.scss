@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'classes';
+
+
+.background-image-box {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}//background-image-box
+
+
+
+.howwework-wrapper {
+  @extend .bio-section;
+  margin-bottom: 3rem;
+
+  .section-title {
+    @extend .bio-section-title;
+  }//section-title
+
+  .section-subtitle {
+    @extend .bio-section-subtitle;
+  }//section-subtitle
+
+  .silverblock-img {
+    @extend .background-image-box;
+    background-size: contain;
+    height: 15rem;
+    padding:1.5rem;
+  }//silverblock-img
+
+  .floor-heating-img {
+    @extend .background-image-box;
+    height: 16rem;
+  }//floor-heating-img
+
+  .pvc-window-img {
+    @extend .background-image-box;
+    background-size: contain !important;
+    height: 25rem;
+  }//pvc-window-img
+
+  .content-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }//content-center
+
+}//howwework-wrapper
