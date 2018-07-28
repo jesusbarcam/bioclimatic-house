@@ -1,3 +1,36 @@
-<p>
-  gallery works!
-</p>
+<div class="gallery-section-wrapper">
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-12">
+        <h1 class="section-title">Gallería de Imágenes</h1>
+        <h3 class="section-subtitle">Conoce todo nuestro trabajo a través de imágenes</h3>
+        <p>En esta sección os mostramos algunas de nuestros últimos trabajos donde podréis comprobar tanto el procedimiento,
+          como la forma de trabajar que nuestro equipo desarrolla diariamente hasta llegar al acabado final donde se puede
+          observar la calidad de nuestro trabajo.
+        </p>
+      </div>
+    </div>
+      
+  </div>
+</div>
+
+
+<div class="gallery-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        <div class="gallery-wrapper" *ngIf=" foundGallery ">
+          <ngx-gallery [options]="galleryOptions" [images]="galleryImages" (imagesReady)=" onImagesReady() "></ngx-gallery>
+        </div>
+
+        <div class="not-gallery-wrapper" *ngIf=" !foundGallery ">
+          <h1>No se encuentra la libreria por ningún laooo!!!</h1>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

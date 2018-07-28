@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { NgxGalleryModule } from 'ngx-gallery';
 import { BiohMaterialModule } from 'bioh-material';
 
 import { ScrollfxDirective, ElementScrollfxDirective } from './directives/scrollfx.directive';
@@ -12,7 +13,8 @@ import { SplashWallpaperComponent } from './components/splash-wallpaper/splash-w
   imports: [
     CommonModule,
     TranslateModule,
-    BiohMaterialModule
+    BiohMaterialModule,
+    NgxGalleryModule
   ],
 
   declarations: [
@@ -28,7 +30,8 @@ import { SplashWallpaperComponent } from './components/splash-wallpaper/splash-w
     ScrollfxDirective,
     ElementScrollfxDirective,
     SplashWallpaperComponent,
-    BiohMaterialModule
+    BiohMaterialModule,
+    NgxGalleryModule
   ]
 })
 export class SharedComponentsModule {

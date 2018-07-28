@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'classes';
+
+
+:host ::ng-deep ngx-gallery {
+  z-index: 0 !important;
+}//host
+
+:host ::ng-deep ngx-gallery {
+  .ngx-gallery-thumbnail {  
+    max-height: 80px;
+    
+    
+    &.ngx-gallery-active {
+      outline: 2px solid $color-selection;
+      outline-offset: -4px;
+    }//ngx-gallery-active
+    
+  }//ngx-gallery-thumbnail.ngx-gallery-active
+}//ng-deep
+
+
+
+
+.gallery-section-wrapper {
+  @extend .bio-section;
+  margin-bottom: 3rem;
+
+  .section-title {
+    @extend .bio-section-title;
+  }//section-title
+
+  .section-subtitle {
+    @extend .bio-section-subtitle;
+  }//section-subtitle
+
+}//gallery-section-wrapper
+
+
+.gallery-title {
+  margin-top: 5rem;
+}//gallery-title
+
+
+.gallery-container {
+  width: 100%;
+  padding: 3.5rem 0;
+  margin: 2.5rem 0;
+  z-index: 500;
+  background-color: rgba($color-dark,0.1);
+
+  .gallery-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }//gallery-wrapper
+
+}//Gallery-container
