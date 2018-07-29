@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy, HostBinding } from '@angular/core';
 import { NgxGalleryImage, NgxGalleryOptions, NgxGalleryAnimation, NgxGalleryAction } from 'ngx-gallery';
 import { Observable } from 'rxjs';
 
@@ -12,12 +12,18 @@ import { LandingZoneModuleSettings } from '../../services/settings/landing-zone-
 })
 export class GalleryComponent implements OnInit {
 
-  public static readonly IMAGES_AMOUNT_PER_GALLERY: number = 5;
+  public static readonly IMAGES_AMOUNT_PER_GALLERY: number = 10;
 
   private _foundGallery: boolean;
   private _activedDirectory: number;
   private _galleryOptions: NgxGalleryOptions[];
   private _galleryImages: NgxGalleryImage[];
+  private _selectors: string[];
+  private _activedSelector: string;
+
+
+  @HostBinding('class.preview-view')
+  previewViewActivated = false;
 
 
   /**
@@ -26,6 +32,7 @@ export class GalleryComponent implements OnInit {
    */
   constructor(private detectorChanges: ChangeDetectorRef) {
     this._galleryImages = [];
+    this._selectors = LandingZoneModuleSettings.IMAGES_GALLERY_SUBDIRECTORIES;
   }// Constructor
 
 
@@ -75,6 +82,7 @@ export class GalleryComponent implements OnInit {
 
   private activeAndBuildGallery(directoryNumber: number) {
     this._activedDirectory = directoryNumber;
+    this._activedSelector = this.findActivedSelector();
     this.buildGallery().subscribe((gallery) => {
       this._galleryImages = gallery;
       this._foundGallery = ( gallery.length > 0 );
@@ -91,8 +99,7 @@ export class GalleryComponent implements OnInit {
   private buildGallery(): Observable<NgxGalleryImage[]> {
     return new Observable ((observer) => {
 
-      const activeDirectoryName = LandingZoneModuleSettings.IMAGES_GALLERY_SUBDIRECTORIES[ this._activedDirectory ];
-      const url = `${LandingZoneModuleSettings.IMAGES_GALLERY_DIRECTORY}/${activeDirectoryName}`;
+      const url = `${LandingZoneModuleSettings.IMAGES_GALLERY_DIRECTORY}/${this.findActivedSelector()}`;
       const imagesCount = GalleryComponent.IMAGES_AMOUNT_PER_GALLERY;
       const gallery = [];
 
@@ -113,9 +120,64 @@ export class GalleryComponent implements OnInit {
    * @method
    * @description
    */
+  private findActivedSelector() {
+    return LandingZoneModuleSettings.IMAGES_GALLERY_SUBDIRECTORIES[ this._activedDirectory ];
+  }// FindActivedSelector
+
+
+
+  /**
+   * @method
+   * @param index
+   * @description
+   */
+  public changeGalleryTo(index: number) {
+    this.activeAndBuildGallery( index );
+  }// ChangeGalleryTo
+
+
+
+  /**
+   * @method
+   * @description
+   */
   public onImagesReady(event) {
-    console.log("ON IMAGES READYYYYYYYYYY::::::::::::: ", event );
+    // TODO: it still not implemented
   }// OnImagesReady
+
+
+
+  /**
+   * @method
+   * @description
+   */
+  public onPreviewViewOpen() {
+    this.previewViewActivated = true;
+    this.detectorChanges.markForCheck();
+  }// OnPreviewChange
+
+
+
+  /**
+   * @method
+   * @description
+   */
+  public onPreviewViewClose() {
+    this.previewViewActivated = false;
+    this.detectorChanges.markForCheck();
+  }// onPreviewViewClose
+
+
+  /**
+   * @method
+   * @param selector
+   * @description
+   */
+  public formaterSelector(selector: string) {
+    const firstCharacter = selector.charAt(0).toUpperCase();
+    const rest = selector.substr(1, selector.length );
+    return `${firstCharacter}${rest}`;
+  }// FormaterSelector
 
 
 
@@ -127,9 +189,16 @@ export class GalleryComponent implements OnInit {
     return this._galleryImages;
   }// GalleryImages
 
-
   public get foundGallery() {
     return this._foundGallery;
   }// FoundGallery
+
+  public get selectors() {
+    return this._selectors;
+  }// Selectors
+
+  public get activedSelector() {
+    return this._activedSelector;
+  }// ActivedDirectory
 
 }// GalleryComponent

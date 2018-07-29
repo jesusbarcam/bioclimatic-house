@@ -17,13 +17,37 @@
 </div>
 
 
+
+
 <div class="gallery-container">
   <div class="container">
+
+    <div class="row">
+      <div class="col-12">
+        
+        <div class="title-selectors">
+          <label>Nuestras construcciones:</label>
+        </div>
+
+        <div class="gallery-selectors">
+          <div class="selector-wrapper" *ngFor="let selector of selectors; index as i">
+            <button [class.active]=" activedSelector === selector " (click)=" changeGalleryTo( i ) ">{{ formaterSelector( selector ) }}</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
     <div class="row">
       <div class="col-12">
         
         <div class="gallery-wrapper" *ngIf=" foundGallery ">
-          <ngx-gallery [options]="galleryOptions" [images]="galleryImages" (imagesReady)=" onImagesReady() "></ngx-gallery>
+          <ngx-gallery [options]="galleryOptions" [images]="galleryImages" (imagesReady)=" onImagesReady() " 
+                        (previewOpen)=" onPreviewViewOpen() " (previewClose)=" onPreviewViewClose() ">
+          </ngx-gallery>
         </div>
 
         <div class="not-gallery-wrapper" *ngIf=" !foundGallery ">
