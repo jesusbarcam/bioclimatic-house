@@ -1,19 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
-// import { ApplicationSettingsService } from '../../../../services/settings/application-settings.service';
-// import { LandingZoneModuleSettings } from '../../services/settings/LandingZoneModuleSettings.service';
+import { ApplicationSettingsService } from '../../../../services/application-settings.service';
 
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export class FooterComponent implements OnInit {
 
   public currentYear: number;
   public currentVersion: string;
+  public biohLogoUrl: string;
 
 
   constructor() {
@@ -32,7 +33,8 @@ export class FooterComponent implements OnInit {
    */
   private inicialize() {
     this.currentYear = new Date().getFullYear();
-    this.currentVersion = '2.0.0'; // ApplicationSettingsService.APPLICATION_VERSION;
+    this.biohLogoUrl = ApplicationSettingsService.BIOH_LOGO_URL;
+    this.currentVersion = ApplicationSettingsService.APPLICATION_VERSION;
   }// inicialize
 
 
