@@ -21,6 +21,13 @@
 }// header-wrap
 
 
+.logotype-wrapper {
+  height: $height-landingPageHeader !important;
+  display: flex;
+  align-items: center;
+}//logotype-wrapper
+
+
 .container {
   height: 100%;
 
