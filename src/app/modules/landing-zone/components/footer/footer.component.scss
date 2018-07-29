@@ -1,0 +1,140 @@
+// NOTE: No he conseguido entender porque no funcionan las configuraciones
+// de sass para bootstrap4 en este componente, ya que para otros al mismo 
+// nivel de jerarquia si funcionan sin introducir esta importación en el componente.
+@import 'variables';
+@import 'mixins';
+@import 'classes';
+
+$opacityOfText: 0.5 !default;
+
+
+.wrapper {
+  width: 100%;
+  color: $color-light;
+  background-color: $color-dark;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}// Wrapper
+
+
+.delimiter-line {
+  @include delimiterLine( $color-light );
+}//delimiter-line
+
+
+.company-logo-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .company-logo {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }//company-logo
+
+}//company-logo-wrapper
+
+
+
+.company-address-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .company-address {
+    @extend .font-paragraph;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    p {
+      @extend .font-paragraph;
+      margin-bottom: 0 !important;
+    }//p
+
+    span {
+      opacity: $opacityOfText;
+    }//contact
+  }//company-address
+}//company-address-wrapper
+
+
+
+
+.company-legal-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .company-legal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    p {
+      @extend .font-paragraph;
+      margin-bottom: 0 !important;
+    }//p
+
+    a span {
+      @extend .font-paragraph;
+      opacity: $opacityOfText;
+    }//span
+
+    a:hover {
+      cursor:pointer;
+      text-decoration: underline;
+    }//a:hover
+
+  }//company-legal
+}
+
+
+
+
+.company-socialmedia {
+  width:100%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+
+  i {
+    color:$color-light;
+    font-size: $size-icons;
+    opacity: $opacityOfText;
+  }//i
+
+  i:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+  
+}//company-socialmedia
+
+
+
+.legal-info-container {
+  @extend .font-detail;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: $opacityOfText;
+}//legal-info-container
+
+
+
+
+
+@include media-breakpoint-down ( xs ) {
+
+  .company-address {
+    align-items: center;
+  }//company-address
+
+
+  .company-legal {
+    align-items: center !important;
+  }//company-legal
+
+}//media-breakpoint-down( sm )

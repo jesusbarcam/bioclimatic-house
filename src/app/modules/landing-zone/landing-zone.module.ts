@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// import { NgxGalleryModule } from 'ngx-gallery';
 
 import { LandingPageRoutingModule } from './routing.module';
 import { SharedComponentsModule } from '../shared-components/shared-components.module';
@@ -12,12 +11,7 @@ import { HowWeWorkComponent } from './components/how-we-work/how-we-work.compone
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
-
-/*
-import {
-  FooterComponent, SplashWallpaperComponent,
-} from './components';
-*/
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -25,7 +19,6 @@ import {
     CommonModule,
     SharedComponentsModule,
     LandingPageRoutingModule
-    // NgxGalleryModule
   ], // Imports
   declarations: [
     LandingZoneComponent,
@@ -34,8 +27,8 @@ import {
     HowWeWorkComponent,
     GalleryComponent,
     ContactComponent,
-    HeaderComponent
-    // FooterComponent
+    HeaderComponent,
+    FooterComponent
   ], // Declarations
   exports: [
     LandingZoneComponent
