@@ -8,7 +8,7 @@
   
   
   <div class="summary-container" [style.top]="logotypePosition" [class.completed]=" completed " >
-    <div #summaryElement class="summary-wrapper" [style.opacity]="summaryOpacity" >
+    <div #summaryElement class="summary-wrapper" [style.opacity]="summaryOpacity" [hidden]=" completed ">
       
       <div class="flex-center">
         <h3 class="summary-detail">{{ detail }}</h3>

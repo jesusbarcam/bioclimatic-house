@@ -16,4 +16,10 @@ export class LandingZoneModuleSettings {
   public static readonly HOW_WE_WORK_FLOOR_HEATING_IMAGE_URL: string = 'assets/images/floorHeating.png';
   public static readonly HOW_WE_WORK_SILVERBLOCK_IMAGE_URL: string = 'assets/images/silverblock282.png';
 
+  public static readonly IMAGES_GALLERY_DIRECTORY: string = 'assets/gallery';
+  public static readonly IMAGES_GALLERY_SUBDIRECTORIES: string[] = ['parla',
+                                                                    'illescas',
+                                                                    'carranque'
+                                                                   ];
+
 }// LandingZoneModuleSettings
