@@ -8,7 +8,7 @@ import { PrivateZoneComponent } from './private-zone.component';
 // This routes are only routes of Private Zone module
 export const privateZoneRoutes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'access' },
-  { path: 'access', pathMatch: 'full', component: PrivateZoneComponent }
+  { path: 'access', pathMatch: 'full', component: PrivateZoneComponent, data: {title: 'BROWSER_TITLES.PRIVATE_ZONE'} }
 ];
 
 
