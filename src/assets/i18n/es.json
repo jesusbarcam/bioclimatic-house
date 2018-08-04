@@ -1,4 +1,12 @@
 {
+  "BROWSER_TITLES":{
+    "HOME":"Inicio",
+    "ABOUT_US":"Sobre Nosotros",
+    "HOW_WE_WORK":"Como Trabajamos",
+    "GALLERY":"Galeria",
+    "CONTACT":"Contacta",
+    "PRIVATE_ZONE":"Zona Privada"
+  },
   "COMMON_APPLICATION":{
     "NAME_COMPANY":"Bioclimatic Big House",
     "FULL_NAME_COMPANY":"Bioclimatic Big House S.L.",

@@ -13,12 +13,12 @@ import { ContactComponent } from './components/contact/contact.component';
 export const landingZoneRoutes: Routes = [
   {path: '', component: LandingZoneComponent,
     children: [
-      { path: '', pathMatch: 'full', redirectTo: 'home'},
-      {path: 'home', component: HomeComponent },
-      { path: 'aboutus', component: AboutUsComponent },
-      {path: 'howwework', component: HowWeWorkComponent },
-      {path: 'gallery', component: GalleryComponent },
-      {path: 'contact', component: ContactComponent },
+      { path: '', pathMatch: 'full', redirectTo: 'home' },
+      {path: 'home', component: HomeComponent, data: {title: 'BROWSER_TITLES.HOME'} },
+      { path: 'aboutus', component: AboutUsComponent, data: {title: 'BROWSER_TITLES.ABOUT_US'} },
+      {path: 'howwework', component: HowWeWorkComponent, data: {title: 'BROWSER_TITLES.HOW_WE_WORK'} },
+      {path: 'gallery', component: GalleryComponent, data: {title: 'BROWSER_TITLES.GALLERY'} },
+      {path: 'contact', component: ContactComponent, data: {title: 'BROWSER_TITLES.CONTACT'} },
       {path: 'access', pathMatch: 'full', redirectTo: '/private/access'} // Redirect to private module routes
   ]},
 ]; // LandingPageRoutes
