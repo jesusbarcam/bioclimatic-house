@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { LandingPageRoutingModule } from './routing.module';
@@ -17,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     SharedComponentsModule,
     LandingPageRoutingModule
   ], // Imports
