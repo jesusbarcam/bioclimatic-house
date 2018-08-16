@@ -2,12 +2,9 @@
   
     <div class="row">
         <div class="col-12">
-          <h1 class="section-title">Contacta con nosotros</h1>
-          <h3 class="section-subtitle">Ya nos has podido conocer, ahora cuentanos tus necesidades</h3>
-          <p>En esta sección te damos la oportunidad que nos consultes tus dudas o nos cuentes tus necesidades, opiniones o 
-            incluso si quieres pedirnos consejo, todo sera bien recibido y te contestaremos lo antes posible, ten paciencia,
-            somos gente muy ocupada pero te aseguramos que la respuesta llegará!...
-          </p>
+          <h1 class="section-title">{{ 'CONTACT.TITLE' | translate }}</h1>
+          <h3 class="section-subtitle">{{ 'CONTACT.SUBTITLE' | translate }}</h3>
+          <p>{{ 'CONTACT.PARAGRAPH' | translate }}...</p>
         </div>
       </div>
 
@@ -17,7 +14,7 @@
         <div class="form-group">
           <div class="col-4">
             <div class="input-wrapper">
-              <input type="email" class="email" formControlName="email" placeholder="Añade tu correo electronico"/>
+              <input type="email" class="email" formControlName="email" [placeholder]=" 'CONTACT.EMAIL_PLACEHOLDER' | translate "/>
             </div>
           </div>
         </div>
@@ -25,7 +22,7 @@
       <div class="form-group">
         <div class="col-10">
           <div class="textarea-wrapper">
-            <textarea class="commentary" formControlName="message" placeholder="Aquí tu consultas, necesidades, dudas u opiniones..."></textarea>
+            <textarea class="commentary" formControlName="message" [placeholder]=" 'CONTACT.MESSAGE_PLACEHOLDER' | translate "></textarea>
           </div>
         </div>
       </div>
@@ -33,8 +30,8 @@
 
       <div class="col-10">
         <div class="buttons-pad">
-          <input type="submit" class="button" value="Enviar" (click)=" submitBioclimaticMessage() " />
-          <input type="button" class="button" value="Reset" (click)=" resetBioclimaticMessage() " [disabled]=" !contactForm.controls.email.value  && !contactForm.controls.message.value "/>
+          <input type="submit" class="button" [value]=" 'CONTACT.SUBMIT_BUTTON' | translate " (click)=" submitBioclimaticMessage() " />
+          <input type="button" class="button" [value]=" 'CONTACT.RESET_BUTTON' | translate " (click)=" resetBioclimaticMessage() " [disabled]=" !contactForm.controls.email.value  && !contactForm.controls.message.value "/>
         </div> 
       </div>
 
