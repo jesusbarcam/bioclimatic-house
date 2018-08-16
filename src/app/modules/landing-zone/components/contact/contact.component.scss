@@ -1,0 +1,81 @@
+@import 'variables';
+@import 'classes';
+
+
+$color-form-element: rgb(219, 226, 220);
+
+
+.contact-section-wrapper {
+  @extend .bio-section;
+}//contact-section-wrapper
+
+
+.section-title{
+  @extend .bio-section-title;
+}//section-title
+
+
+.section-subtitle{
+  @extend .bio-section-subtitle;
+}//section-subtitle
+
+
+.form-elements-styles {
+  font-family: $fontFamily;
+  font-weight: 400;
+  width:100%;
+  border: 0;
+  border-radius: 3px;
+  background-color: $color-form-element;
+  padding:0.5rem;
+  outline-color: $color-selection;
+  outline-width: 2px;
+}//form-elements-styles
+
+
+.container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width:100%;
+}//container
+
+
+.input-wrapper {
+  width:100%;
+  margin-bottom:0.8rem;
+
+  input.email {
+    @extend .form-elements-styles;
+  }//input
+}//input-wrapper
+
+.textarea-wrapper {
+
+  textarea.commentary {
+    min-height: 25rem;
+    resize: none !important;
+    @extend .form-elements-styles;
+  }//commentary
+}//textarea-wrapper
+
+
+
+.buttons-pad {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  input.button {
+    border: none !important;
+    padding: 0.5rem 2rem;
+    border-radius: 3px;
+    background-color: $color-form-element;
+    outline-color: $color-selection;
+    outline-width: 2px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: darken($color-form-element, 10);
+    }//hover
+  }//input
+}//buttons-pad
