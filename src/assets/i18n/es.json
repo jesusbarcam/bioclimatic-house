@@ -7,6 +7,8 @@
     "CONTACT":"Contacta",
     "PRIVATE_ZONE":"Zona Privada"
   },
+
+
   "COMMON_APPLICATION":{
     "NAME_COMPANY":"Bioclimatic Big House",
     "FULL_NAME_COMPANY":"Bioclimatic Big House S.L.",
@@ -20,6 +22,8 @@
     "SLOGAN_GALLERY":"Mínimo consumo energético, mínimo impacto ambiental",
     "SLOGAN_CONTACT":"Las tecnologías constructivas más avanzadas"
   },
+
+
   "NAVIGATION_LANDING_ZONE":{
     "PRIVATE_ACCESS_BTN":"Zona Privada",
     "HOME":"Inicio",
@@ -29,10 +33,14 @@
     "CONTACT":"Contacto",
     "PRIVATE":"Zona Privada"
   },
+
+
   "BANNER_LANDING_ZONE":{
     "BANNER_TEXT":"Si necesitas preguntar o realizar cualquier tipo de cuestión",
     "BANNER_TEXT_LINK":"nosotros estamos dispuestos a ayudarte!"
   },
+
+
   "FOOTER_LANDING_ZONE":{
     "WHERE_WE_ARE":"Dónde encontrarnos",
     "LEGAL_CONDITIONS":"Condiciones Legales",
@@ -41,9 +49,17 @@
     "COOKIES":"Política de Cookies",
     "COPYRIGHT_LABEL":"todos los derechos reservados"
   },
-  "HOME":{
 
+
+  "HOME":{
+    "BOX_DETAIL_1":"Máxima Calidad Arquitectonica",
+    "BOX_DETAIL_2":"Máximo Aislamiento",
+    "BOX_DETAIL_3":"Mínimo tiempo de ejecución",
+    "COMMERCIAL_TITLE_1": "Nuestro principal objetivo",
+    "COMMERCIAL_SLOGAN_1": "Intentar que todas nuestras construcciones integren el diseño, la arquitectura y la ingeniería para maximizar la estética, el ahorro de energía y la sostenibilidad."
   },
+
+
   "ABOUT_US":{
     "TITLE":"¿Quienes somos?",
     "SUBTITLE":"Conoce quienes somos y nuestras ideales de construcción",
@@ -61,6 +77,7 @@
     "PARAGRAPH_FINAL_SLOGAN":"Bioclimatic Big House, creado por y para personas, innovamos para mejorar y abaratar tu futuro dando mayor y mejor conford en el lugar mas importante...tu casa"
   },
 
+
   "GALLERY":{
     "TITLE":"Galería de Imágenes",
     "SUBTITLE":"Conoce todo nuestro trabajo a través de imágenes",
@@ -68,6 +85,7 @@
     "SELECTORS_TITLE":"Nuestras construcciones",
     "NOT_FOUND_GALLERY":"Ops!...Lo sentimos pero no hemos encuentrado la librería, intentelo mas tarde"
   },
+
 
   "CONTACT":{
     "TITLE":"Contacta con nosotros",

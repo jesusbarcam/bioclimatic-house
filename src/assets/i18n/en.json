@@ -7,6 +7,8 @@
     "CONTACT":"Contact",
     "PRIVATE_ZONE":"Private Zone"
   },
+
+
   "COMMON_APPLICATION":{
     "NAME_COMPANY":"Bioclimatic Big House",
     "FULL_NAME_COMPANY":"Bioclimatic Big House S.L.",
@@ -20,6 +22,8 @@
     "SLOGAN_GALLERY":"Minimum energy consumption, minimum environmental impact",
     "SLOGAN_CONTACT":"The most advanced construction technologies"
   },
+
+
   "NAVIGATION_LANDING_ZONE":{
     "PRIVATE_ACCESS_BTN":"Private Zone",
     "HOME":"Home",
@@ -29,10 +33,14 @@
     "CONTACT":"Contact",
     "PRIVATE":"Private Zone"
   },
+
+
   "BANNER_LANDING_ZONE":{
     "BANNER_TEXT":"If you need to ask or make any kind of question",
     "BANNER_TEXT_LINK":"we are willing to help you!"
   },
+
+
   "FOOTER_LANDING_ZONE":{
     "WHERE_WE_ARE":"Where we are",
     "LEGAL_CONDITIONS":"Legal Conditions",
@@ -41,9 +49,17 @@
     "COOKIES":"Cookies",
     "COPYRIGHT_LABEL":"All Rights Reserved"
   },
-  "HOME":{
 
+
+  "HOME":{
+    "BOX_DETAIL_1":"Max Architectural Quality",
+    "BOX_DETAIL_2":"Max Isolation",
+    "BOX_DETAIL_3":"Min execution time",
+    "COMMERCIAL_TITLE_1": "Our principal objective",
+    "COMMERCIAL_SLOGAN_1": "We try that all our constructions integrate design, architecture and engineering to maximize aesthetics, energy saving and sustainability."
   },
+
+
   "ABOUT_US":{
     "TITLE":"About Us ...",
     "SUBTITLE":"Know who we are and our ideals of construction",
