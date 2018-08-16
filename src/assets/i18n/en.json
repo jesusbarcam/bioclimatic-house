@@ -60,6 +60,16 @@
     "PARAGRAPH_FINAL_SLOGAN":"Bioclimatic Big House, creado por y para personas, innovamos para mejorar y abaratar tu futuro dando mayor y mejor conford en el lugar mas importante...tu casa"
   },
 
+
+  "GALLERY":{
+    "TITLE":"Images Gallery",
+    "SUBTITLE":"You can know all our work through images",
+    "PARAGRAPH":"In this section we show you some of our latest works where you can check both the procedure and the way of working that our team develops daily until we reach the final finish where you can see the quality of our work.",
+    "SELECTORS_TITLE":"Our constructions",
+    "NOT_FOUND_GALLERY":"Ops!...We are sorry but we have not found the bookstore, try it later"
+  },
+
+
   "CONTACT":{
     "TITLE":"Contact Us",
     "SUBTITLE":"You have already been able to meet us, now tell us your needs",
