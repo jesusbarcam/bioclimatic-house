@@ -1,4 +1,10 @@
 {
+  "LANGUAGES":{
+    "es":"Español",
+    "en":"Ingles",
+    "ru":"Rumano"
+  },
+
   "BROWSER_TITLES":{
     "HOME":"Inicio",
     "ABOUT_US":"Sobre Nosotros",

@@ -65,8 +65,12 @@
         <div class="col-12">
           <div class="delimiter-line"></div>
           <div class="legal-info-container" >
-            <span>{{ currentVersion }}</span>
+            <bioh-select [options]=" languagesList " (selectOption)="onLangChanges($event)" ></bioh-select>
+
             <span>{{ currentYear }} &copy; Bioclimatic Big House<span class="hidden-xs-down"> {{ 'FOOTER_LANDING_ZONE.COPYRIGHT_LABEL' | translate }}</span>.</span>
+
+            <span>{{ currentVersion }}</span>
+
           </div>
         </div>
     
