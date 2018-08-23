@@ -14,7 +14,11 @@
         <div class="form-group">
           <div class="col-4">
             <div class="input-wrapper">
-              <input type="email" class="email" formControlName="email" [placeholder]=" 'CONTACT.EMAIL_PLACEHOLDER' | translate "/>
+              <input type="email" class="email" [class.with-error]=" hasErrorInEmailInput " formControlName="email" [placeholder]=" 'CONTACT.EMAIL_PLACEHOLDER' | translate "/>
+            </div>
+            <div class="form-errors">
+              <span class="required-field-error" *ngIf=" ifRequiredValidationError ">Este campo es obligatorio</span>
+              <span class="email-format-error" *ngIf=" ifFormatEmailValidationError ">El email no respeta el formato correcto</span>
             </div>
           </div>
         </div>
@@ -22,7 +26,10 @@
       <div class="form-group">
         <div class="col-10">
           <div class="textarea-wrapper">
-            <textarea class="commentary" formControlName="message" [placeholder]=" 'CONTACT.MESSAGE_PLACEHOLDER' | translate "></textarea>
+            <textarea class="commentary" [class.with-error]=" hasErrorInCommentaryTextarea " formControlName="message" [placeholder]=" 'CONTACT.MESSAGE_PLACEHOLDER' | translate "></textarea>
+          </div>
+          <div class=" form-errors ">
+            <span *ngIf=" hasErrorInCommentaryTextarea ">Este campo es obligatorio</span>
           </div>
         </div>
       </div>

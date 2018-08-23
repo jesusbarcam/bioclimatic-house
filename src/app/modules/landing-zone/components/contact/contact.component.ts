@@ -34,13 +34,21 @@ export class ContactComponent implements OnInit {
 
 
 
+  /**
+   * @method
+   * @public
+   * @description
+   */
   public submitBioclimaticMessage() {
+
+    console.log("CHECKEO DEL FORMULARIO DE ENVIO: ", this._contactForm );
     if ( this._contactForm.valid ) {
       console.log("AHORA ENVIAMOS EL EMAIL AL SERVER!");
     } else {
       console.log("AHORA NO ENVIAMOS EL EMAIL EXISTEN ERRORES!!");
     }// If
   }// SubmitBioclimaticMessage
+
 
 
   /**
@@ -55,6 +63,22 @@ export class ContactComponent implements OnInit {
   }// ResetBioclimaticMessage
 
 
+  public get hasErrorInEmailInput() {
+    return this._contactForm.touched && this._contactForm.controls['email'].invalid;
+  }// HasErrorInEmailInput
+
+  public get ifRequiredValidationError() {
+    return this._contactForm.touched && (this._contactForm.controls['email'].hasError('required'));
+  }// IfRequiredValidationError
+
+
+  public get ifFormatEmailValidationError() {
+    return this._contactForm.touched && (this._contactForm.controls['email'].hasError('email'));
+  }
+
+  public get hasErrorInCommentaryTextarea() {
+    return this._contactForm.touched && (this._contactForm.controls['message'].invalid);
+  }// HasErrorInCommentaryTextarea
 
   public get contactForm() {
     return this._contactForm;

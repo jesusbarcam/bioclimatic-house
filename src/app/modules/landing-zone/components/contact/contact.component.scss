@@ -42,10 +42,15 @@ $color-form-element: rgb(219, 226, 220);
 
 .input-wrapper {
   width:100%;
-  margin-bottom:0.8rem;
 
   input.email {
     @extend .form-elements-styles;
+    margin-bottom:0.8rem;
+
+    &.with-error {
+      border: 1px solid $color-errors !important;
+    }//with-error
+
   }//input
 }//input-wrapper
 
@@ -55,6 +60,11 @@ $color-form-element: rgb(219, 226, 220);
     min-height: 25rem;
     resize: none !important;
     @extend .form-elements-styles;
+
+    &.with-error {
+      border: 1px solid $color-errors !important;
+    }//with-error
+    
   }//commentary
 }//textarea-wrapper
 
@@ -77,5 +87,15 @@ $color-form-element: rgb(219, 226, 220);
       cursor: pointer;
       background-color: darken($color-form-element, 10);
     }//hover
+
   }//input
 }//buttons-pad
+
+
+.form-errors span {
+  position: absolute;
+  margin-top: -0.5rem;
+  font-size:0.82rem;
+  color: $color-errors;
+
+}//form-errors
