@@ -38,14 +38,19 @@ export class ContactComponent implements OnInit {
    * @method
    * @public
    * @description
+   * This method check if contact form is valid,
+   * for send to backend this form.
    */
   public submitBioclimaticMessage() {
-
-    console.log("CHECKEO DEL FORMULARIO DE ENVIO: ", this._contactForm );
+    // Check if contact form is valid,
+    // we only will sending form to backend if
+    // all data are correct!
     if ( this._contactForm.valid ) {
       console.log("AHORA ENVIAMOS EL EMAIL AL SERVER!");
     } else {
-      console.log("AHORA NO ENVIAMOS EL EMAIL EXISTEN ERRORES!!");
+      // If form is invalidate, we mark contact form as touched
+      // for show all errors in contact form...
+      this._contactForm.markAsTouched();
     }// If
   }// SubmitBioclimaticMessage
 

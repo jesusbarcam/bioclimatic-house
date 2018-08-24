@@ -64,7 +64,7 @@ $color-form-element: rgb(219, 226, 220);
     &.with-error {
       border: 1px solid $color-errors !important;
     }//with-error
-    
+
   }//commentary
 }//textarea-wrapper
 
@@ -78,6 +78,7 @@ $color-form-element: rgb(219, 226, 220);
   input.button {
     border: none !important;
     padding: 0.5rem 2rem;
+    margin-left: 0.5rem !important;
     border-radius: 3px;
     background-color: $color-form-element;
     outline-color: $color-selection;
