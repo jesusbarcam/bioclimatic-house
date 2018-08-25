@@ -1,5 +1,9 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { ContactService } from '../../../../services/contact.service';
+import { HttpErrorResponse, HttpEvent } from '@angular/common/http';
+import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-contact',
@@ -7,22 +11,39 @@ import { ReactiveFormsModule, FormGroup, FormControl, FormBuilder, Validators } 
   styleUrls: ['./contact.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent implements OnInit, OnDestroy {
+
+  public static readonly TRANSLATION_404_ERROR_MESSAGE = 'ERRORS.E404';
 
 
   private _contactForm: FormGroup;
+  private _subscriptions: Subscription[];
 
 
-  constructor(private formBuilder: FormBuilder) {}// Constructor
+  constructor(private formBuilder: FormBuilder,
+              private translateService: TranslateService,
+              private contactService: ContactService) {
+  }// Constructor
+
+
 
   ngOnInit() {
     this.build();
   }// NgOnInit
 
 
+
+  ngOnDestroy(): void {
+    this._subscriptions.forEach((subscription) => subscription.unsubscribe() );
+  }// NgOnDestroy
+
+
+
   private build() {
+    this._subscriptions = [];
     this.buildContactForm();
   }// Build
+
 
 
   private buildContactForm() {
@@ -31,6 +52,51 @@ export class ContactComponent implements OnInit {
       message: [null, Validators.required]
     });
   }// BuildContactForm
+
+
+
+  /**
+   * @method
+   * @param error
+   * @description
+   */
+  private handlerOfSendMessageError( error: HttpErrorResponse) {
+    const errorCode = error.status;
+    let translationCode = null;
+    switch ( errorCode ) {
+      case 404:
+        translationCode = ContactComponent.TRANSLATION_404_ERROR_MESSAGE;
+    }// Switch
+    // Get translation of error message
+    this.showTranslationErrorMessage( translationCode );
+  }// HandlerOfSendMessageError
+
+
+
+  /**
+   * @method
+   * @param translationCode
+   * @description
+   */
+  private showTranslationErrorMessage(translationCode: string) {
+    // Get translation of message
+    const subscription = this.translateService.get( translationCode )
+    .subscribe(( translations ) => {
+      console.log("ESTE ES EL MENSAJE QUE DEBERÍA DE APARECER DEPENDIENDO DEL LENGUAGE DE LA APLICACIÓN: ", translations );
+    }); // subscribe
+    this._subscriptions.push( subscription );
+  }// ShowTranslationErrorMessage
+
+
+
+  /**
+   * @method
+   * @param resp
+   * @description
+   */
+  private handlerOfSuccessSendMessage( resp: any ) {
+    console.log('EL MENSAJE HA SIDO ENVIADO CORRECTAMENTE: ', resp );
+  }// HandlerOfSuccessSendMessage
 
 
 
@@ -46,7 +112,15 @@ export class ContactComponent implements OnInit {
     // we only will sending form to backend if
     // all data are correct!
     if ( this._contactForm.valid ) {
-      console.log("AHORA ENVIAMOS EL EMAIL AL SERVER!");
+      this.contactService.sendMessageOfClientToCompany( this._contactForm.getRawValue() )
+      .subscribe((resp) => {
+        this.handlerOfSuccessSendMessage( resp );
+
+      },
+      (error) => {
+        this.handlerOfSendMessageError( error );
+
+      });
     } else {
       // If form is invalidate, we mark contact form as touched
       // for show all errors in contact form...
@@ -66,6 +140,7 @@ export class ContactComponent implements OnInit {
     this._contactForm.controls[ 'email' ].setValue( null );
     this._contactForm.controls[ 'message' ].setValue( null );
   }// ResetBioclimaticMessage
+
 
 
   public get hasErrorInEmailInput() {

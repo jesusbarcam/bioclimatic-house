@@ -15,6 +15,11 @@
   },
 
 
+  "ERRORS":{
+    "E404":"Actualmente nuestro sistema se encuentra fuera de cobertura... intentelo mas tarde. Sentimos las molestias"
+  },
+
+
   "COMMON_APPLICATION":{
     "NAME_COMPANY":"Bioclimatic Big House",
     "FULL_NAME_COMPANY":"Bioclimatic Big House S.L.",
