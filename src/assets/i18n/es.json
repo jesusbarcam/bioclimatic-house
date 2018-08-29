@@ -16,7 +16,9 @@
 
 
   "ERRORS":{
-    "E404":"Actualmente nuestro sistema se encuentra fuera de cobertura... intentelo mas tarde. Sentimos las molestias"
+    "E404":"Actualmente nuestro sistema se encuentra fuera de cobertura... intentelo mas tarde. Sentimos las molestias",
+    "REQUIRED_FIELD":"Este campo es obligatorio",
+    "EMAIL_FORMAT_VALIDATION":"El email no respeta el formato correcto"
   },
 
 
@@ -140,6 +142,8 @@
     "EMAIL_PLACEHOLDER":"Añade tu correo electronico",
     "MESSAGE_PLACEHOLDER":"Aquí tu consultas, necesidades, dudas u opiniones...",
     "SUBMIT_BUTTON":"Enviar",
-    "RESET_BUTTON":"Borrar"
+    "RESET_BUTTON":"Borrar",
+    "SHIPPING_PROCCESS":"Enviando",
+    "DISPATCHED_MAIL":"El correo ha sido enviado, recibira respuesta en poco tiempo"
   }
 }

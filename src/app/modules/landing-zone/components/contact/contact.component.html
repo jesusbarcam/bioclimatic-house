@@ -17,8 +17,8 @@
               <input type="email" class="email" [class.with-error]=" hasErrorInEmailInput " formControlName="email" [placeholder]=" 'CONTACT.EMAIL_PLACEHOLDER' | translate "/>
             </div>
             <div class="form-errors">
-              <span class="required-field-error" *ngIf=" ifRequiredValidationError ">Este campo es obligatorio</span>
-              <span class="email-format-error" *ngIf=" ifFormatEmailValidationError ">El email no respeta el formato correcto</span>
+              <span class="required-field-error" *ngIf=" ifRequiredValidationError ">{{ 'ERRORS.REQUIRED_FIELD' | translate }}</span>
+              <span class="email-format-error" *ngIf=" ifFormatEmailValidationError ">{{ 'ERRORS.EMAIL_FORMAT_VALIDATION' | translate }}</span>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@
             <textarea class="commentary" [class.with-error]=" hasErrorInCommentaryTextarea " formControlName="message" [placeholder]=" 'CONTACT.MESSAGE_PLACEHOLDER' | translate "></textarea>
           </div>
           <div class=" form-errors ">
-            <span *ngIf=" hasErrorInCommentaryTextarea ">Este campo es obligatorio</span>
+            <span *ngIf=" hasErrorInCommentaryTextarea ">{{ 'ERRORS.REQUIRED_FIELD' | translate }}</span>
           </div>
         </div>
       </div>
@@ -39,11 +39,11 @@
         <div class="buttons-pad">
           
           <div class="shipping-message show-shipping-process" *ngIf=" shipping && !dispatched ">
-            <span>Enviando!</span>
+            <span>{{ 'CONTACT.SHIPPING_PROCCESS' | translate }}!</span>
           </div>
 
           <div class="shipping-message show-shipping-dispatched" *ngIf=" shipping && dispatched && !shippingError ">
-            <span>El correo ha sido enviado, recibira respuesta en poco tiempo!</span>
+            <span>{{ 'CONTACT.DISPATCHED_MAIL' | translate }}!</span>
           </div>
 
           <div class="shipping-message show-shipping-dispatched-with-error" *ngIf=" shipping && dispatched && shippingError ">
