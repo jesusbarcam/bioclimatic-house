@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { ContactService } from '../../../../services/contact.service';
 import { HttpErrorResponse, HttpEvent } from '@angular/common/http';
@@ -18,9 +18,13 @@ export class ContactComponent implements OnInit, OnDestroy {
 
   private _contactForm: FormGroup;
   private _subscriptions: Subscription[];
+  private _shipping: boolean;
+  private _dispatched: boolean;
+  private _shippingError: string;
 
 
   constructor(private formBuilder: FormBuilder,
+              private changeDetector: ChangeDetectorRef,
               private translateService: TranslateService,
               private contactService: ContactService) {
   }// Constructor
@@ -40,6 +44,8 @@ export class ContactComponent implements OnInit, OnDestroy {
 
 
   private build() {
+    this._shipping = false;
+    this._dispatched = false;
     this._subscriptions = [];
     this.buildContactForm();
   }// Build
@@ -82,7 +88,8 @@ export class ContactComponent implements OnInit, OnDestroy {
     // Get translation of message
     const subscription = this.translateService.get( translationCode )
     .subscribe(( translations ) => {
-      console.log("ESTE ES EL MENSAJE QUE DEBERÍA DE APARECER DEPENDIENDO DEL LENGUAGE DE LA APLICACIÓN: ", translations );
+      this._shippingError = translations;
+      this.changeDetector.markForCheck();
     }); // subscribe
     this._subscriptions.push( subscription );
   }// ShowTranslationErrorMessage
@@ -95,7 +102,8 @@ export class ContactComponent implements OnInit, OnDestroy {
    * @description
    */
   private handlerOfSuccessSendMessage( resp: any ) {
-    console.log('EL MENSAJE HA SIDO ENVIADO CORRECTAMENTE: ', resp );
+    this._dispatched = true;
+    this.changeDetector.markForCheck();
   }// HandlerOfSuccessSendMessage
 
 
@@ -112,12 +120,15 @@ export class ContactComponent implements OnInit, OnDestroy {
     // we only will sending form to backend if
     // all data are correct!
     if ( this._contactForm.valid ) {
+      this._shipping = true;
       this.contactService.sendMessageOfClientToCompany( this._contactForm.getRawValue() )
       .subscribe((resp) => {
+        this._dispatched = true;
         this.handlerOfSuccessSendMessage( resp );
 
       },
       (error) => {
+        this._dispatched = true;
         this.handlerOfSendMessageError( error );
 
       });
@@ -137,8 +148,12 @@ export class ContactComponent implements OnInit, OnDestroy {
    * This method clear all fields of contact form
    */
   public resetBioclimaticMessage() {
+    this._shipping = false;
+    this._dispatched = false;
+    this._shippingError = undefined;
     this._contactForm.controls[ 'email' ].setValue( null );
     this._contactForm.controls[ 'message' ].setValue( null );
+    this._contactForm.markAsUntouched();
   }// ResetBioclimaticMessage
 
 
@@ -163,5 +178,17 @@ export class ContactComponent implements OnInit, OnDestroy {
   public get contactForm() {
     return this._contactForm;
   }// ContactForm
+
+  public get dispatched() {
+    return this._dispatched;
+  }// Dispatched
+
+  public get shipping() {
+    return this._shipping;
+  }// Shipping
+
+  public get shippingError() {
+    return this._shippingError;
+  }// ShippingError
 
 }// ContactComponent

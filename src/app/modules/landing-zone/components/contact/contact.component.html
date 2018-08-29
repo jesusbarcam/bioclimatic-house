@@ -37,7 +37,20 @@
 
       <div class="col-10">
         <div class="buttons-pad">
-          <input type="submit" class="button" [value]=" 'CONTACT.SUBMIT_BUTTON' | translate " (click)=" submitBioclimaticMessage() " />
+          
+          <div class="shipping-message show-shipping-process" *ngIf=" shipping && !dispatched ">
+            <span>Enviando!</span>
+          </div>
+
+          <div class="shipping-message show-shipping-dispatched" *ngIf=" shipping && dispatched && !shippingError ">
+            <span>El correo ha sido enviado, recibira respuesta en poco tiempo!</span>
+          </div>
+
+          <div class="shipping-message show-shipping-dispatched-with-error" *ngIf=" shipping && dispatched && shippingError ">
+            <span>{{ shippingError }}</span>
+          </div>
+
+          <input type="submit" class="button" [value]=" 'CONTACT.SUBMIT_BUTTON' | translate " (click)=" submitBioclimaticMessage() " [hidden]=" shipping " />
           <input type="button" class="button" [value]=" 'CONTACT.RESET_BUTTON' | translate " (click)=" resetBioclimaticMessage() " [disabled]=" !contactForm.controls.email.value  && !contactForm.controls.message.value "/>
         </div> 
       </div>

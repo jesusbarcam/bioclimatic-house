@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParameterCodec } from '@angular/common/http';
-import { catchError } from 'rxjs/operators';
+import { throwError as observableThrowError,  Observable } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 
 
 @Injectable({ providedIn: 'root' })
 export class ContactService {
 
-  public static readonly CONTACT_MESSAGE_END_POINT: string = 'http:localhost:5000/contact/message';
+  public static readonly CONTACT_MESSAGE_END_POINT: string = '/contact/message';
 
 
 
@@ -25,8 +26,8 @@ export class ContactService {
    */
   public sendMessageOfClientToCompany(formValues: {email: string, message: string}) {
     return this.http.post( ContactService.CONTACT_MESSAGE_END_POINT, formValues )
-                    .pipe(
-                      catchError((err) => { throw err; }));
+                    .pipe(map( (res) => res ))
+                    .pipe(catchError( (res) => observableThrowError( res.error )) );
   }// SendMessageOfClientToCompany
 
 
