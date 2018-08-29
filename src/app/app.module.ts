@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { UnknowPageComponent } from './components/unknow-page/unknow-page.component';
 import { PrivateZoneModule } from './modules/private-zone/private-zone.module';
 import { LandingZoneModule } from './modules/landing-zone/landing-zone.module';
+import { ContactService } from './services/contact.service';
 import { RoutingModule } from './routing.module';
 
 // This function make of constructor to Loader inside of Translate Module,
@@ -40,7 +41,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     UnknowPageComponent
   ],
-  providers: [],
+  providers: [
+    ContactService
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }// AppModule
