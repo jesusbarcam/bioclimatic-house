@@ -25,7 +25,7 @@ export class BannerContactComponent implements OnInit {
    * When user make click in banner, 
    * app must will navigate to contact section
    */
-  private clickContact(event: Event) {
+  public clickContact(event: Event) {
     this.router.navigate([ '/public/contact' ]);
   }// ClickContact
 

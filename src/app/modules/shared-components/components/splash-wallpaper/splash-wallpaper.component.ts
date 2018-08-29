@@ -75,7 +75,7 @@ export class SplashWallpaperComponent implements OnInit {
    * @method
    * @description
    */
-  private getPercentOfScrollPosition() {
+  public getPercentOfScrollPosition() {
     const windowHeight: number = window.innerHeight;
     const scrollPosition: number = document.body.scrollTop || window.pageYOffset;
     return ( scrollPosition * 100 ) / windowHeight;
