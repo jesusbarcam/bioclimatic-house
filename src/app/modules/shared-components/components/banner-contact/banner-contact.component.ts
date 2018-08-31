@@ -22,11 +22,11 @@ export class BannerContactComponent implements OnInit {
    * @private
    * @method
    * @description
-   * When user make click in banner, 
+   * When user make click in banner,
    * app must will navigate to contact section
    */
   public clickContact(event: Event) {
-    this.router.navigate([ '/public/contact' ]);
+    this.router.navigate([ '/public/contact' ], {fragment: 'message'});
   }// ClickContact
 
 }// BannerContactComponent

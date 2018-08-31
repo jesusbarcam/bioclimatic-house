@@ -1,4 +1,4 @@
-<div class="container contact-section-wrapper">
+<div #messageFormComponent class="container contact-section-wrapper">
   
     <div class="row">
         <div class="col-12">
@@ -14,7 +14,7 @@
         <div class="form-group">
           <div class="col-4">
             <div class="input-wrapper">
-              <input type="email" class="email" [class.with-error]=" hasErrorInEmailInput " formControlName="email" [placeholder]=" 'CONTACT.EMAIL_PLACEHOLDER' | translate "/>
+              <input autofocus type="email" class="email" [class.with-error]=" hasErrorInEmailInput " formControlName="email" [placeholder]=" 'CONTACT.EMAIL_PLACEHOLDER' | translate "/>
             </div>
             <div class="form-errors">
               <span class="required-field-error" *ngIf=" ifRequiredValidationError ">{{ 'ERRORS.REQUIRED_FIELD' | translate }}</span>
