@@ -48,3 +48,20 @@ $zIndex-fixedElements:1000;// Header,footer,right and leftbar ...
 $zIndex-popElements:1300;// popovers, tooltips...
 $zIndex-modalElements:1500;// dialogs, modals ... 
 $zIndex-notifications:1700;// system notifications ..
+
+
+//Breakpoints
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1600px;
+
+
+//Width of bootstrap containers
+$sm-container:  540px;
+$md-container:  720px;
+$lg-container:  960px;
+$xl-container:  1156px;
+$xxl-container: 1530px;

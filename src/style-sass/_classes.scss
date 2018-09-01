@@ -51,3 +51,10 @@
   margin-bottom:1rem;
   background-color: rgba($color-company,0.3);
 }//bio-section-subtitle
+
+
+
+@media (max-width:$sm) {
+  .bio-section-title { font-size: $fontSize-title - 0.5rem; }
+  .bio-section-subtitle { font-size: $fontSize-subtitle - 0.5rem; }
+}//@media query max-width
