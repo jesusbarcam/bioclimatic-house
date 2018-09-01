@@ -8,13 +8,34 @@ import { Component, OnInit , ChangeDetectionStrategy} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  private _movileDevicesMenu: boolean;
+
+
 
   constructor() {
+    this._movileDevicesMenu = false;
   }// Constructor
+
 
 
   ngOnInit() {
   }// NgOnInit
 
+
+
+  /**
+   * @method
+   * @public
+   * @description
+   */
+  public showMovileDevicesMenu() {
+    console.log('SHOW MOVILE DEVICE MENU!!!!');
+  }// ShowMovileDevicesMenu
+
+
+
+  public get movileDeviceMenu() {
+    return this._movileDevicesMenu;
+  }// MovileDeviceMenu
 
 }// HeaderComponent

@@ -77,3 +77,26 @@ div.navigator {
 
 
 }//navigator
+
+
+
+div.small-navigator {
+  display: none;
+  margin-right: 1rem !important;
+  height: $height-landingPageHeader; 
+  i { font-size: 2.5rem; }//i
+}//small-navigator
+
+
+
+@media (max-width: $md ) {
+  
+  div.navigator { display: none !important;}
+
+  div.small-navigator { 
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+  }//small-navigator
+
+}//@media-max-width
