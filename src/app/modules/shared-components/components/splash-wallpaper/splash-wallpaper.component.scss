@@ -163,3 +163,21 @@ $numClasses: 15;
   50%  { top: 15px; }
   100% { top: 0px; }
 }//expand
+
+
+
+@media (max-width: $md) {
+
+  .flex-center {
+    width: 85% !important;
+  }
+  
+  .summary-container .summary-wrapper h1.summary { 
+    font-size: 2.5rem !important; 
+  }//summary
+  
+  h3.summary-detail {
+    font-size: 0.8rem !important;
+  }//summary-details
+
+}//@media max-width
