@@ -19,13 +19,26 @@
           <!-- <a [routerLink]="[ 'access' ]" routerLinkActive="active">{{ 'NAVIGATION_LANDING_ZONE.PRIVATE' | translate }}</a> -->  
         </div>
 
-        <div class="small-navigator" (click)=" showMovileDevicesMenu() ">
+        <div class="small-navigator" (click)=" showMovileDevicesMenu($event) ">
           <i class="material-icons">menu</i>
         </div>
-  
+
       </div>
     </div>
   </div>
+
+  <div div="bioh-sidebar-wrapper">
+    <bioh-sidebar position="left" [open]=" sidebarIsOpen " (close)=" sidebarIsClosed() ">
+      <div class=" mini-navigator " >
+        <a (click)=" miniNavigatorClick( 'home' ) "  routerLinkActive="active">{{ 'NAVIGATION_LANDING_ZONE.HOME' | translate }}</a>
+        <a (click)=" miniNavigatorClick( 'aboutus' ) "  routerLinkActive="active">{{ 'NAVIGATION_LANDING_ZONE.ABOUT_US' | translate }}</a> 
+        <a (click)=" miniNavigatorClick( 'howwework' ) " routerLinkActive="active">{{ 'NAVIGATION_LANDING_ZONE.HOW_WE_WORK' | translate }}</a>
+        <a (click)=" miniNavigatorClick( 'gallery' ) " routerLinkActive="active">{{ 'NAVIGATION_LANDING_ZONE.IMAGES_GALLERY' | translate }}</a>
+        <a (click)=" miniNavigatorClick( 'contact' ) " routerLinkActive="active">{{ 'NAVIGATION_LANDING_ZONE.CONTACT' | translate }}</a>
+      </div>
+    </bioh-sidebar>
+  </div>
+
 </div>
 
 
