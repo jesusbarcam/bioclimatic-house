@@ -1,5 +1,6 @@
-import { Component, OnInit, OnDestroy, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectionStrategy, ChangeDetectorRef , ViewChild, ElementRef} from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 import { ContactService } from '../../../../services/contact.service';
 import { HttpErrorResponse, HttpEvent } from '@angular/common/http';
 import { TranslateService } from '@ngx-translate/core';
@@ -23,7 +24,12 @@ export class ContactComponent implements OnInit, OnDestroy {
   private _shippingError: string;
 
 
+  @ViewChild('messageFormComponent')
+  private messageFormComponent: ElementRef;
+
+
   constructor(private formBuilder: FormBuilder,
+              private route: ActivatedRoute,
               private changeDetector: ChangeDetectorRef,
               private translateService: TranslateService,
               private contactService: ContactService) {
@@ -33,6 +39,7 @@ export class ContactComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.build();
+    this.checkUrl();
   }// NgOnInit
 
 
@@ -49,6 +56,21 @@ export class ContactComponent implements OnInit, OnDestroy {
     this._subscriptions = [];
     this.buildContactForm();
   }// Build
+
+
+
+  /**
+   * @method
+   * @private
+   */
+  private checkUrl() {
+    const subscription = this.route.fragment.subscribe((fragment) => {
+      if ( fragment && fragment === 'message') {
+        this.messageFormComponent.nativeElement.scrollIntoView();
+      }// If
+    }); // Subscription
+    this._subscriptions.push( subscription );
+  }// CheckUrl
 
 
 

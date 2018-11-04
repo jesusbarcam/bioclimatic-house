@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 import { LandingZoneModuleSettings } from './services/settings/landing-zone-module-settings.service';
 
@@ -57,7 +57,12 @@ export class LandingZoneComponent implements OnInit {
    * @description
    */
   private initListenerRouter() {
-    this.router.events.subscribe(( val: any ) => this.whenRouteChange( val.url ));
+    this.router.events.subscribe(( event: any ) => {
+      if ( event instanceof NavigationEnd ) {
+        this.whenRouteChange( event.url );
+        window.scrollTo(0, 0);
+      }// If
+    });
   }// InitListenerRouter
 
 

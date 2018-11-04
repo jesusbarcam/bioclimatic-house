@@ -7,6 +7,7 @@ import { BiohMaterialModule } from 'bioh-material';
 import { ScrollfxDirective, ElementScrollfxDirective } from './directives/scrollfx.directive';
 import { BannerContactComponent } from './components/banner-contact/banner-contact.component';
 import { SplashWallpaperComponent } from './components/splash-wallpaper/splash-wallpaper.component';
+import { BiohSidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
 
@@ -21,7 +22,8 @@ import { SplashWallpaperComponent } from './components/splash-wallpaper/splash-w
     BannerContactComponent,
     ScrollfxDirective,
     ElementScrollfxDirective,
-    SplashWallpaperComponent
+    SplashWallpaperComponent,
+    BiohSidebarComponent
   ],
 
   exports: [
@@ -31,7 +33,8 @@ import { SplashWallpaperComponent } from './components/splash-wallpaper/splash-w
     ElementScrollfxDirective,
     SplashWallpaperComponent,
     BiohMaterialModule,
-    NgxGalleryModule
+    NgxGalleryModule,
+    BiohSidebarComponent
   ]
 })
 export class SharedComponentsModule {
