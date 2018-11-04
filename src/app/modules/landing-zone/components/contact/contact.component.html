@@ -1,0 +1,59 @@
+<div #messageFormComponent class="container contact-section-wrapper">
+  
+    <div class="row">
+        <div class="col-12">
+          <h1 class="section-title">{{ 'CONTACT.TITLE' | translate }}</h1>
+          <h3 class="section-subtitle">{{ 'CONTACT.SUBTITLE' | translate }}</h3>
+          <p>{{ 'CONTACT.PARAGRAPH' | translate }}...</p>
+        </div>
+      </div>
+
+    <form [formGroup]=" contactForm ">
+    
+    
+        <div class="form-group">
+          <div class="col-4">
+            <div class="input-wrapper">
+              <input autofocus type="email" class="email" [class.with-error]=" hasErrorInEmailInput " formControlName="email" [placeholder]=" 'CONTACT.EMAIL_PLACEHOLDER' | translate "/>
+            </div>
+            <div class="form-errors">
+              <span class="required-field-error" *ngIf=" ifRequiredValidationError ">{{ 'ERRORS.REQUIRED_FIELD' | translate }}</span>
+              <span class="email-format-error" *ngIf=" ifFormatEmailValidationError ">{{ 'ERRORS.EMAIL_FORMAT_VALIDATION' | translate }}</span>
+            </div>
+          </div>
+        </div>
+        
+      <div class="form-group">
+        <div class="col-10">
+          <div class="textarea-wrapper">
+            <textarea class="commentary" [class.with-error]=" hasErrorInCommentaryTextarea " formControlName="message" [placeholder]=" 'CONTACT.MESSAGE_PLACEHOLDER' | translate "></textarea>
+          </div>
+          <div class=" form-errors ">
+            <span *ngIf=" hasErrorInCommentaryTextarea ">{{ 'ERRORS.REQUIRED_FIELD' | translate }}</span>
+          </div>
+        </div>
+      </div>
+        
+
+      <div class="col-10">
+        <div class="buttons-pad">
+          
+          <div class="shipping-message show-shipping-process" *ngIf=" shipping && !dispatched ">
+            <span>{{ 'CONTACT.SHIPPING_PROCCESS' | translate }}!</span>
+          </div>
+
+          <div class="shipping-message show-shipping-dispatched" *ngIf=" shipping && dispatched && !shippingError ">
+            <span>{{ 'CONTACT.DISPATCHED_MAIL' | translate }}!</span>
+          </div>
+
+          <div class="shipping-message show-shipping-dispatched-with-error" *ngIf=" shipping && dispatched && shippingError ">
+            <span>{{ shippingError }}</span>
+          </div>
+
+          <input type="submit" class="button" [value]=" 'CONTACT.SUBMIT_BUTTON' | translate " (click)=" submitBioclimaticMessage() " [hidden]=" shipping " />
+          <input type="button" class="button" [value]=" 'CONTACT.RESET_BUTTON' | translate " (click)=" resetBioclimaticMessage() " [disabled]=" !contactForm.controls.email.value  && !contactForm.controls.message.value "/>
+        </div> 
+      </div>
+
+    </form> 
+</div>

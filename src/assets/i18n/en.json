@@ -1,0 +1,153 @@
+{
+  "LANGUAGES":{
+    "es":"Spanish",
+    "en":"English",
+    "ru":"Romanian"
+  },
+
+
+  "BROWSER_TITLES":{
+    "HOME":"Home",
+    "ABOUT_US":"About Us",
+    "HOW_WE_WORK":"How We Work",
+    "GALLERY":"Gallery",
+    "CONTACT":"Contact",
+    "PRIVATE_ZONE":"Private Zone"
+  },
+
+
+  "ERRORS":{
+    "E404":"Currently our system is out of coverage ...Try it later. We apologize for the inconveniences",
+    "REQUIRED_FIELD":"This field is required",
+    "EMAIL_FORMAT_VALIDATION":"The mail format is wrong"
+  },
+
+
+  "COMMON_APPLICATION":{
+    "NAME_COMPANY":"Bioclimatic Big House",
+    "FULL_NAME_COMPANY":"Bioclimatic Big House S.L.",
+    "ADDRESS_COMPANY":"Avenida Castilla la Mancha",
+    "ADDRESS_NUMBER_COMPANY":"87 2ºA",
+    "TOWN_COMPANY":"Illescas (Toledo)",
+    "POSTAL_CODE_COMPANY":"45200",
+    "PHONES_COMPANY":"654 746 654",
+    "EMAIL_COMPANY":"greenbighouse@gmail.com",
+    "TITLE":"Official Web App of Bioclimatic Big House Company",
+    "SLOGAN_HOME":"We Builded yours dreams, securing the future",
+    "SLOGAN_ABOUT_US":"Use of renewable energy through sustainable systems",
+    "SLOGAN_HOW_WE_WORK":"Energy saving and sustainability",
+    "SLOGAN_GALLERY":"Minimum energy consumption, minimum environmental impact",
+    "SLOGAN_CONTACT":"The most advanced construction technologies"
+  },
+
+
+  "NAVIGATION_LANDING_ZONE":{
+    "PRIVATE_ACCESS_BTN":"Private Zone",
+    "HOME":"Home",
+    "ABOUT_US":"About Us",
+    "HOW_WE_WORK":"How We Work",
+    "IMAGES_GALLERY":"Images Gallery",
+    "CONTACT":"Contact",
+    "PRIVATE":"Private Zone"
+  },
+
+
+  "BANNER_LANDING_ZONE":{
+    "BANNER_TEXT":"If you need to ask or make any kind of question",
+    "BANNER_TEXT_LINK":"we are willing to help you!"
+  },
+
+
+  "FOOTER_LANDING_ZONE":{
+    "WHERE_WE_ARE":"Where we are",
+    "LEGAL_CONDITIONS":"Legal Conditions",
+    "TERMS":"Terms",
+    "PRIVACY":"Privacy",
+    "COOKIES":"Cookies",
+    "COPYRIGHT_LABEL":"All Rights Reserved"
+  },
+
+
+  "HOME":{
+    "BOX_DETAIL_1":"Max Architectural Quality",
+    "BOX_DETAIL_2":"Max Isolation",
+    "BOX_DETAIL_3":"Min execution time",
+    "COMMERCIAL_TITLE_1": "Our principal objective",
+    "COMMERCIAL_SLOGAN_1": "We try that all our constructions integrate design, architecture and engineering to maximize aesthetics, energy saving and sustainability."
+  },
+
+
+  "HOW_WE_WORK":{
+    "TITLE":"How do we work?",
+    "SUBTITLE":"Connect our work method and our philosophy",
+    "PARAGRAPH_1":"Our working method is a clear example of innovation and search for the best solutions, we streamline construction, we lower the costs of execution, and last but not least, we make sustainable constructions with a high degree of energy efficiency. Below we will describe our methodology in broad strokes, based on the main pillars that we always emphasize: ",
+    "CONSTRUCTION_TITLE":"The best isolation methods",
+    "CONSTRUCTION_DESCRIPTION":"We currently carry out a construction system based on reinforced concrete load-bearing walls, with an EPS (Expanded Polystyrene) formwork. 'This system is known in other countries as ICF (Insulated Concrete Forms), which allows forming at the same time the structure, the enclosure and the insulation in a fast, simplified and clean way, saving time and labor costs The EPS formwork remains in the structure later, providing an excellent thermal and acoustic insulation, as well as a high degree of of comfort in the buildings built with this system.These blocks consist of two molded panels of high-density fireproof EPS, joined by polypropylene spacers, as you can see in the following image.'",
+    "CONSTRUCTION_SUMMARY":"In summary, we can underline the following advantages: 'In summary, we can underline the following advantages'",
+    "CONSTRUCTION_OPTION_1":"Quick and simple assembly without skilled labor",
+    "CONSTRUCTION_OPTION_2":"Maximum saving of time and costs",
+    "CONSTRUCTION_OPTION_3":"Solid structure of reinforced concrete with great resistance to seismic movements",
+    "CONSTRUCTION_OPTION_4":"Excellent thermal and acoustic insulation",
+    "CONSTRUCTION_OPTION_5":"High energy efficiency",
+    "CONSTRUCTION_OPTION_6":"Sustainability with the environment",
+    "RADIANT_TITLE":"Maximum thermal utilization by radiant floors.",
+    "RADIANT_DESCRIPTION":"The installation of underfloor heating can mean a <b> saving between 10% and 20% compared to other conventional heating systems </ b> .This is because the water flow temperature is very low (30-45º) compared to traditional systems (80-85º). ",
+    "RADIANT_SUMMARY":"We get more comfort because the air temperature close to the ground will be slightly higher than the air temperature at head height, and the heat is distributed evenly throughout the house. healthy because no air currents reduce dust, does not produce dryness as others do, and low humidity manages to prevent the appearance of mites.The radiant floor can use different water heating systems such as boilers, heat pump and solar energy Thanks to a heat pump we can use the same facility to cool the floor in summer.This system can work continuously for many hours so it is very useful for houses or buildings with a busy schedule. advantage is that it does not occupy space like radiators, and it is more aesthetic since it does not affect the decoration of the house.",
+    "ENERGY_TITLE":"Max energy efficiency.",
+    "ENERGY_DESCRIPTION":"Maximum energy efficiency.",
+    "WINDOWS_TITLE":"Latest generation enclosure systems.",
+    "WINDOWS_DESCRIPTION":"The installation of doors and windows with the highest levels of insulation is essential for the thermal maintenance of the interior of the house, currently we install PVC enclosures, this being a material friendly to the environment, they are 100% recyclable and Due to the benefits of insulation, it allows a significant reduction in the use of energy.In addition, the production of PVC has low levels of contamination and much less energy is used in its manufacture than in the case of other types of windows. characteristics of our enclosures are the following: ",
+    "WINDOWS_OPTION_1":"PVC windows offer the best thermal and acoustic insulation.",
+    "WINDOWS_OPTION_2":"Excellent insulating and safety properties.",
+    "WINDOWS_OPTION_3":"They produce great energy and economic savings.",
+    "WINDOWS_OPTION_4":"They have an excellent ecological balance",
+    "WINDOWS_OPTION_5":"They have a long service life, up to 50 years.",
+    "WINDOWS_OPTION_6":"It does not deform with time.",
+    "WINDOWS_OPTION_7":"They do not need maintenance.",
+    "WINDOWS_OPTION_8":"The best quality price.",
+    "MATERIALS_TITLE":"Fast and agile construction",
+    "MATERIALS_DESCRIPTION":"The use of light materials reduces labor by more than 70%, considerably reducing construction time and significantly increasing productivity.",
+    "ECONOMY_TITLE":"Economically profitable.",
+    "ECONOMY_DESCRIPTION":"Building for less time and with less labor reduces the execution costs to a great extent, this gives us the possibility of making projects available to all types of pockets, always depending on the qualities that each client wants to install , we do the best job, at the best price."
+  },
+
+  
+  "ABOUT_US":{
+    "TITLE":"About Us ...",
+    "SUBTITLE":"Know who we are and our ideals of construction",
+    "PARAGRAPH_1":"Sencillamente, Bioclimatic Big House lo formamos un grupo de personas, personas apasionadas por la innovación aplicada a la experiencia del cliente, buscamos y utilizamos los métodos más modernos de análisis, diseño y por último de construcción de cada uno de los proyectos que emprendemos y denominamos como nuestro, todos y cada uno de ellos son ideados para conseguir la certificación energética más eficiente, para ello siempre respetamos una serie de pilares en los que se cimienta nuestro método:",
+    "CONSTRUCTION_FEATURES":{
+      "ITEM_1":"Busqueda y utilización de los mejores métodos de aislamiento",
+      "ITEM_2":"Máxima eficiencia energetica mediante energias limpias y sostenibles",
+      "ITEM_3":"Total aprovechamiento térmico gracias a la instalación de suelos radiantes",
+      "ITEM_4":"Utilización de materiales ligeros"
+    },
+    "PARAGRAPH_2":"Estos son las bases esenciales en las que nos apoyamos para poder realizar proyectos con certificación térmica clase A aprobados y visados por el colegio nacional de arquitectos, realizamos <b>viviendas un 150% más eficientes que una vivienda realizada con métodos tradicionales</b>.Nuestra dilatada experiencia en este tipo de construcciones, son mas de un centenar de viviendas construidas en diferentes paises, la fiabilidad y calidad de nuestros proyectos finalizados nos avala.",
+    "PARAGRAPH_3":"El método Bioclimatic Big House es apto para todo tipo de bolsillos, <b>nuestros proyectos están estudiados para que el coste total sea similar o incluso inferior a una construcción tradicional</b>, el análisis inicial y diseño de cada uno de nuestros proyectos están enfocados a conseguir que nuestro método se adapte al presupuesto de nuestro cliente.",
+    "PARAGRAPH_4":"Una casa bioclimática no tiene por qué ser más cara que una convencional. No necesita de la compra o instalación de sistemas mecánicos de climatización, sino que juega con los elementos arquitectónicos de siempre para incrementar el rendimiento energético y conseguir el confort de forma natural. Para ello, el diseño bioclimático supone un conjunto de restricciones, pero siguen existiendo grados de libertad para el diseño según el gusto de cada cual. La arquitectura bioclimática tiene en cuenta las condiciones del terreno, el recorrido del Sol, las corrientes de aire, etc., aplicando estos aspectos a la distribución de los espacios, la apertura y orientación de las ventanas, etc., con el fin de conseguir una eficiencia energética. No consiste en inventar cosas extrañas sino diseñar con las ya existentes y saber sacar el máximo provecho a los recursos naturales que nos brinda el entorno. Sin embargo, esto no tiene porqué condicionar el aspecto de la construcción, que es completamente variable y perfectamente acorde con las tendencias y el diseño de una buena arquitectura.",
+    "PARAGRAPH_5":"La arquitectura bioclimática es un tipo de arquitectura donde el equilibrio y la armonía son una constante con el medio ambiente. Se busca lograr un gran nivel de confort térmico, teniendo en cuenta el clima y las condiciones del entorno para ayudar a conseguir el confort térmico interior mediante la adecuación del diseño, la geometría, la orientación y la construcción del edificio adaptado a las condiciones climáticas de su entorno. Juega exclusivamente con las características locales del medio (relieve, clima, vegetación natural, dirección de los vientos dominantes, insolación, etc.), así como,el diseño y los elementos arquitectónicos, sin utilizar sistemas mecánicos, que más bien se consideran como sistemas de apoyo. No debemos olvidar, que una gran parte de la arquitectura tradicional ya funcionaba según los principios bioclimáticos: ventanales orientados al sur en las regiones de clima frío del hemisferio norte, el uso de ciertos materiales con determinadas propiedades térmicas, como la madera, la piedra o el adobe, el abrigo del suelo, el encalado en las casas mediterráneas para mantener el interior fresco en verano, la ubicación de los pueblos, etc. La arquitectura bioclimática es, en definitiva, una arquitectura adaptada al medio ambiente, sensible al impacto que provoca en la naturaleza, y que intenta minimizar el consumo energético y con él, la contaminación ambiental.",
+    "PARAGRAPH_FINAL_SLOGAN":"Bioclimatic Big House, creado por y para personas, innovamos para mejorar y abaratar tu futuro dando mayor y mejor conford en el lugar mas importante...tu casa"
+  },
+
+
+  "GALLERY":{
+    "TITLE":"Images Gallery",
+    "SUBTITLE":"You can know all our work through images",
+    "PARAGRAPH":"In this section we show you some of our latest works where you can check both the procedure and the way of working that our team develops daily until we reach the final finish where you can see the quality of our work.",
+    "SELECTORS_TITLE":"Our constructions",
+    "NOT_FOUND_GALLERY":"Ops!...We are sorry but we have not found the bookstore, try it later"
+  },
+
+
+  "CONTACT":{
+    "TITLE":"Contact Us",
+    "SUBTITLE":"You have already been able to meet us, now tell us your needs",
+    "PARAGRAPH":"In this section we give you the opportunity to consult us your doubts or tell us your needs, opinions or even if you want to ask us for advice, everything will be well received and we will answer you as soon as possible, be patient, we are very busy people but we assure you that the answer reach!",
+    "EMAIL_PLACEHOLDER":"Add your email",
+    "MESSAGE_PLACEHOLDER":"Add your message ...",
+    "SUBMIT_BUTTON":"Send",
+    "RESET_BUTTON":"Reset",
+    "SHIPPING_PROCCESS":"Sending",
+    "DISPATCHED_MAIL":"The email has been sent, you will receive a response in a short time"
+  }
+}

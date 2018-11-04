@@ -1,0 +1,85 @@
+<div class="wrapper">
+    <div class="container">
+       
+      <div class="row">  
+  
+  
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+          <div class="company-logo-wrapper">
+  
+            <div class="company-logo">
+              <bioh-logotype [full]="false" [height]="95" ></bioh-logotype>
+            </div>
+          
+          </div>
+        </div>
+  
+  
+  
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4">
+          <div class="delimiter-line hidden-sm-up"></div>
+          <div class="company-address-wrapper">
+            <div class="company-address">
+              <p>{{ 'FOOTER_LANDING_ZONE.WHERE_WE_ARE' | translate }}: </p>
+              <span>{{ 'COMMON_APPLICATION.ADDRESS_COMPANY' | translate }} | <span>Nº {{ 'COMMON_APPLICATION.ADDRESS_NUMBER_COMPANY' | translate }}</span></span>
+              <span>{{ 'COMMON_APPLICATION.TOWN_COMPANY' | translate }} | <span>{{ 'COMMON_APPLICATION.POSTAL_CODE_COMPANY' | translate }}</span></span>
+              <span>{{ 'COMMON_APPLICATION.EMAIL_COMPANY' | translate }}</span>
+              <span>Tlf: {{ 'COMMON_APPLICATION.PHONES_COMPANY' | translate }}</span>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+          <div class="delimiter-line hidden-sm-up"></div>
+          <div class="company-legal-wrapper">
+            <div class="company-legal">
+              <p>{{ 'FOOTER_LANDING_ZONE.LEGAL_CONDITIONS' | translate }}:</p>
+              <a><span>{{ 'FOOTER_LANDING_ZONE.TERMS' | translate }}</span></a>
+              <a><span>{{ 'FOOTER_LANDING_ZONE.PRIVACY' | translate }}</span></a>
+              <a><span>{{ 'FOOTER_LANDING_ZONE.COOKIES' | translate }}</span></a>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="col-12 col-md-12 col-lg-3 col-xl-3">
+          <div class="delimiter-line hidden-lg-up"></div>
+          <div class="company-socialmedia">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+          </div>
+        </div>
+  
+      </div>
+  
+  
+  
+  
+      <div class="row">
+        
+        <div class="col-12">
+          <div class="delimiter-line"></div>
+          <div class="legal-info-container" >
+            <bioh-select [options]=" languagesList " (selectOption)="onLangChanges($event)" ></bioh-select>
+
+            <span>{{ currentYear }} &copy; Bioclimatic Big House<span class="hidden-xs-down"> {{ 'FOOTER_LANDING_ZONE.COPYRIGHT_LABEL' | translate }}</span>.</span>
+
+            <span>{{ currentVersion }}</span>
+
+          </div>
+        </div>
+    
+      </div>
+      
+  
+  
+    </div>
+  </div>
+  
+  
+  

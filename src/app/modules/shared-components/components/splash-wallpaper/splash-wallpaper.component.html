@@ -1,0 +1,36 @@
+<div class="transclude-menu" [class.fixed]="insert">
+    <div class="menu-wrapper">
+    
+      <ng-content select=".menu-transclusion"></ng-content>
+    
+    </div>
+  </div>
+  
+  
+  <div class="summary-container" [style.top]="logotypePosition" [class.completed]=" completed " >
+    <div #summaryElement class="summary-wrapper" [style.opacity]="summaryOpacity" [hidden]=" completed ">
+      
+      <div class="flex-center">
+        <h3 class="summary-detail">{{ detail }}</h3>
+        <h1 class="summary">{{ summary }}</h1>
+        <div #detectedScroll class="horizont-bar"></div>
+      </div>
+        
+    </div>
+  </div>
+
+  <div class="next-button-container rollscroll"  *ngIf=" getPercentOfScrollPosition() === 0 ">
+    <a (click)="goToNextStep()">
+      <i class="material-icons forward-icon animation-infinite-loop">forward</i>
+    </a>
+  </div>
+  
+  
+  <div class="wrapper">
+    <div class="wallpaper-mask" [style.opacity]="maskOpacityValue" ></div>
+    
+    <div [ngClass]=" blurFXClass ">
+      <bioh-wallpaper [url]=" imageUrl "></bioh-wallpaper>
+    </div>
+  
+  </div>

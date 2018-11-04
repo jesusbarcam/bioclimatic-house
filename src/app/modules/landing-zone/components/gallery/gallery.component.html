@@ -1,0 +1,57 @@
+<div class="gallery-section-wrapper">
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-12">
+        <h1 class="section-title">{{ 'GALLERY.TITLE' | translate }}</h1>
+        <h3 class="section-subtitle">{{ 'GALLERY.SUBTITLE' | translate }}</h3>
+        <p>{{ 'GALLERY.PARAGRAPH' | translate }}</p>
+      </div>
+    </div>
+      
+  </div>
+</div>
+
+
+
+
+<div class="gallery-container">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12">
+        
+        <div class="title-selectors">
+          <label>{{ 'GALLERY.SELECTORS_TITLE' | translate }}:</label>
+        </div>
+
+        <div class="gallery-selectors">
+          <div class="selector-wrapper" *ngFor="let selector of selectors; index as i">
+            <button [class.active]=" activedSelector === selector " (click)=" changeGalleryTo( i ) ">{{ formaterSelector( selector ) }}</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="row">
+      <div class="col-12">
+        
+        <div class="gallery-wrapper" *ngIf=" foundGallery ">
+          <ngx-gallery [options]="galleryOptions" [images]="galleryImages" (imagesReady)=" onImagesReady() " 
+                        (previewOpen)=" onPreviewViewOpen() " (previewClose)=" onPreviewViewClose() ">
+          </ngx-gallery>
+        </div>
+
+        <div class="not-gallery-wrapper" *ngIf=" !foundGallery ">
+          <h1>{{ 'GALLERY.NOT_FOUND_GALLERY' | translate }}</h1>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

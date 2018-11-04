@@ -1,0 +1,60 @@
+@import 'variables';
+
+
+// NOTE: Medium size of application fonts 
+.font-paragraph {
+  font-size: $fontSize-paragraph;
+  line-height: $fontSize-paragraph + 0.6rem;
+  font-weight: 100 !important;
+}//font-paragraph
+
+.font-paragraph-bold {
+  @extend .font-paragraph;
+  font-weight: 300;
+}//font-paragraph
+
+
+
+// NOTE: Small fonts of application
+.font-detail {
+  font-size: $fontSize-detail;
+  line-height: $fontSize-detail + 0.3rem;
+  font-weight: 100 !important;
+}//font-detail
+
+.font-detail-bold {
+  @extend .font-detail;
+  font-weight: 300 !important;
+}//font-detail-bold
+
+
+
+.bio-section {
+  width: 100%;
+  margin-top: 4.5rem;
+  font-size: $fontSize-paragraph;
+}//bio-section
+
+
+.bio-section-title {
+  font-size:$fontSize-title + 0.5rem;
+  font-weight: bolder;
+  margin-bottom: 0 !important;
+}//bio-section-title
+
+
+.bio-section-subtitle {
+  width: 100%;
+  font-size:$fontSize-subtitle;
+  font-weight: 100;
+  padding:0.2rem;
+  margin-bottom:1rem;
+  background-color: rgba($color-company,0.3);
+}//bio-section-subtitle
+
+
+
+@media (max-width:$sm) {
+  .bio-section-title { font-size: $fontSize-title - 0.5rem; }
+  .bio-section-subtitle { font-size: $fontSize-subtitle - 0.5rem; }
+}//@media query max-width

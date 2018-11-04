@@ -1,0 +1,105 @@
+@import 'variables';
+@import 'classes';
+
+
+:host ::ng-deep ngx-gallery {
+  z-index: 1;
+}//host
+
+
+
+:host.preview-view ::ng-deep ngx-gallery {
+  z-index: 100 !important;
+}//host
+
+
+
+:host ::ng-deep ngx-gallery {
+
+  .ngx-gallery-thumbnail {  
+    max-height: 80px;
+      
+    &.ngx-gallery-active {
+      outline: 2px solid $color-selection;
+      outline-offset: -4px;
+    }//ngx-gallery-active
+    
+  }//ngx-gallery-thumbnail.ngx-gallery-active
+}//ng-deep
+
+
+
+
+.gallery-section-wrapper {
+  @extend .bio-section;
+  margin-bottom: 3rem;
+
+  .section-title {
+    @extend .bio-section-title;
+  }//section-title
+
+  .section-subtitle {
+    @extend .bio-section-subtitle;
+  }//section-subtitle
+
+}//gallery-section-wrapper
+
+
+.title-selectors {
+  font-family: $fontFamily;
+  font-size: 1.4rem;
+  font-weight: 100;
+}//title-selectors
+
+
+.gallery-selectors {
+  width: 100%;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem !important;
+
+  button {
+    border: 0 !important;
+    outline: none !important;
+    margin-right: 0.3rem;
+    background-color: rgba($color-dark,0.15);
+    padding: 0.5rem !important;
+    font-family: $fontFamily;
+    font-size: 0.95rem;
+    border-radius: 3px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba($color-dark,0.3);
+    }//hover
+
+    &.active {
+      background-color: darken($color-selection, 5);
+    }//active
+
+  }// Button
+
+}//gallery-selectors
+
+
+.gallery-title {
+  margin-top: 5rem;
+}//gallery-title
+
+
+.gallery-container {
+  width: 100%;
+  padding: 3.5rem 0;
+  margin: 2.5rem 0;
+  z-index: 500;
+  background-color: rgba($color-dark,0.1);
+
+  .gallery-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }//gallery-wrapper
+
+}//Gallery-container

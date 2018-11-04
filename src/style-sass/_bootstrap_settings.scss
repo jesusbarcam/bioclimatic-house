@@ -1,0 +1,38 @@
+@import 'variables';
+
+$grid-columns: 12;
+$grid-gutter-width-base: 30px;
+
+$grid-gutter-widths: (
+  xs:  $grid-gutter-width-base, // 30px
+  sm:  $grid-gutter-width-base, // 30px
+  md:  $grid-gutter-width-base, // 30px
+  lg:  $grid-gutter-width-base, // 30px
+  xl:  $grid-gutter-width-base,  // 30px
+  xxl: $grid-gutter-width-base  // 30px
+);
+
+
+$grid-breakpoints: (
+  // Extra small screen phone
+  xs: $xs,
+  // Small screen phone
+  sm: $sm,
+  //screen tablet
+  md: $md,
+  //screen desktop
+  lg: $lg,
+  //wide desktop
+  xl: $xl,
+  //extra wide desktop o smart-tv
+  xxl: $xxl
+);
+
+
+$container-max-widths: (
+  sm:  $sm-container,
+  md:  $md-container,
+  lg:  $lg-container,
+  xl:  $xl-container,
+  xxl: $xxl-container
+);

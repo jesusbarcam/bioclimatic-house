@@ -1,0 +1,8 @@
+@import 'variables';
+
+
+@mixin delimiterLine( $color ) {
+  border-bottom: 1px solid $color;
+  opacity: 0.05;
+  margin:$margin-between-components 0px;
+}//delimiterLine

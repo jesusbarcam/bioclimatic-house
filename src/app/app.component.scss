@@ -1,0 +1,40 @@
+@import 'variables';
+
+
+.private-access {  
+  position: fixed;
+  margin:20px;
+  padding:8px;
+  right: 0;
+  border:1px solid $color-light;
+  border-radius: 3px;
+  z-index: $zIndex-fixedElements + 10;
+  opacity: 0.7;
+
+  
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $fontSize-widget;
+    font-weight: 100;
+    line-height: $fontSize-widget;
+    color:$color-light !important;
+
+    span { margin-left: 5px;}//i
+
+  }// a
+
+}// private-access
+
+
+
+
+.private-access:hover {
+  cursor: pointer;
+  opacity: 1;
+
+  a:hover {  
+    text-decoration: none; 
+  }//a
+}//private-access:hover

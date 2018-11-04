@@ -1,0 +1,67 @@
+//All sass libraries that work in our application 
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+
+
+//Theme of app
+$color-company:#AFFD89;
+$color-selection:$color-company;
+
+$color-dark:#25272e;
+$color-light:#c0fcf3;
+$color-light-extra:#ffffff;
+
+$color-1:lighten($color-dark,20);
+$color-2: #44B3ED;
+$color-errors: #b60c0c;
+$color-success: #0d7416;
+$color-warning: #f7db5e;
+
+
+//fonts styles of app
+$fontFamily: 'Montserrat',arial,sans-serif;
+$fontSize-title: 2.5rem;
+$fontSize-subtitle: 1.7rem;
+$fontSize-widget: 0.95rem;
+$fontSize-paragraph: 0.9rem;
+$fontSize-detail: 0.85rem;
+
+//Icons styles of app
+$size-icons-small:0.8rem;
+$size-icons:1.5rem;
+$size-icons-big:2.5rem;
+
+//Elements dimensions 
+$height-landingPageHeader: 5.3rem;
+
+
+//Margins styles of app
+$margin-main-mobile:2px;
+$margin-main-tablet:15px;
+$margin-main-desktop:250px;
+$margin-main-desktop-hd:50px;
+
+$margin-between-components:20px;
+
+//Settings of app
+$zIndex-fixedElements:1000;// Header,footer,right and leftbar ...
+$zIndex-popElements:1300;// popovers, tooltips...
+$zIndex-modalElements:1500;// dialogs, modals ... 
+$zIndex-notifications:1700;// system notifications ..
+
+
+//Breakpoints
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1600px;
+
+
+//Width of bootstrap containers
+$sm-container:  540px;
+$md-container:  720px;
+$lg-container:  960px;
+$xl-container:  1156px;
+$xxl-container: 1530px;
