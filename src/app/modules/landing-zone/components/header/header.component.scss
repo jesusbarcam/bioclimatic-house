@@ -60,7 +60,7 @@ div.navigator {
   a:hover {
     cursor: pointer;
     color: rgba($color-light,1);
-    background-color:rgba($color-light,0.05);
+    background-color: rgba($color-light,0.05);
   }//a:hover
 
 
@@ -77,3 +77,40 @@ div.navigator {
 
 
 }//navigator
+
+
+
+div.small-navigator {
+  display: none;
+  margin-right: 1rem !important;
+  height: $height-landingPageHeader; 
+  i { font-size: 2.5rem; }//i
+}//small-navigator
+
+
+.mini-navigator {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  a {
+    padding: 0.5rem;
+    color: $color-light !important;
+  }//a
+
+}//mini-navigator
+
+
+
+@media (max-width: $md ) {
+  
+  div.navigator { display: none !important;}
+
+  div.small-navigator { 
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+  }//small-navigator
+
+}//@media-max-width
