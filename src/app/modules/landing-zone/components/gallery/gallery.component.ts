@@ -12,7 +12,7 @@ import { LandingZoneModuleSettings } from '../../services/settings/landing-zone-
 })
 export class GalleryComponent implements OnInit {
 
-  public static readonly IMAGES_AMOUNT_PER_GALLERY: number = 10;
+  public static readonly IMAGES_AMOUNT_PER_GALLERY: number = 21;
 
   private _foundGallery: boolean;
   private _activedDirectory: number;

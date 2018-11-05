@@ -17,9 +17,12 @@ export class LandingZoneModuleSettings {
   public static readonly HOW_WE_WORK_SILVERBLOCK_IMAGE_URL: string = 'assets/images/silverblock282.png';
 
   public static readonly IMAGES_GALLERY_DIRECTORY: string = 'assets/gallery';
-  public static readonly IMAGES_GALLERY_SUBDIRECTORIES: string[] = ['parla',
+  public static readonly IMAGES_GALLERY_SUBDIRECTORIES: string[] = [
                                                                     'illescas',
-                                                                    'carranque'
+                                                                    'carranque',
+                                                                    'rivas',
+                                                                    'paracuellos del Jarama',
+                                                                    'parla'
                                                                    ];
 
 }// LandingZoneModuleSettings
